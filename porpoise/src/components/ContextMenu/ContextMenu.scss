@@ -1,0 +1,23 @@
+.context-wrap {
+    position: fixed;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    .context-ul {
+        list-style: none;
+        margin: 8px 0;
+        .context-li {
+            padding: 0 8px;
+            width: 88px;
+            font-size: 14px;
+            color: #50565C;
+            height: 32px;
+            line-height: 32px;
+            text-align: left;
+            cursor: pointer;
+            &:hover {
+                background-color: #F2F2F2;
+            }
+        }
+    }
+}

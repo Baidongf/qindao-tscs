@@ -1,0 +1,16 @@
+.main-component {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background: #F0F0F0;
+  height: 100%;
+  margin: auto;
+  // width: 1100px;
+  .main-component-router {
+    background: #f0f0f0;
+    padding-bottom: 50px;
+  }
+}

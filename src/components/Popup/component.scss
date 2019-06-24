@@ -1,0 +1,46 @@
+.ant-modal {
+
+  .ant-modal-content {
+
+    .ant-modal-close-x {
+      color: #b3b3b3;
+    }
+
+    .ant-modal-header {
+      background-color: #ffffff;
+
+      .ant-modal-title {
+        color: #383838;
+      }
+    }
+
+    .ant-modal-body { }
+
+    .ant-modal-footer {
+      border-top: none;
+      text-align: center;
+
+      .ant-btn {
+        background-color: #f2f2f2;
+        border-color: #f2f2f2;
+        color: #5b5b5b;
+
+        &:hover {
+          border-color: #f2f2f2;
+          color: #5b5b5b;
+        }
+      }
+
+      .ant-btn-primary {
+        background-color: #d24545;
+        border-color: #d24545;
+        color: #ffffff;
+
+        &:hover {
+          background-color: #d24545;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

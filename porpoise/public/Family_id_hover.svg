@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 44 (41325) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7 Copy 14</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 16 0 16 16 0 16"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7-Copy-14">
+            <g id="Group-6-Copy">
+                <g transform="translate(12.000000, 12.000000)">
+                    <g id="Shape-Copy-20" opacity="0">
+                        <use fill="#E8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#D0D0D0" stroke-width="2" d="M1,1 L1,15 L15,15 L15,1 L1,1 Z"></path>
+                    </g>
+                    <g id="Group-5" transform="translate(1.000000, 2.000000)" stroke="#FFCB00" stroke-width="0.8" fill="#FFFFFF">
+                        <path d="M14,11.6666667 C14,8.44500563 11.3883277,5.83333333 8.16666667,5.83333333 C4.94500563,5.83333333 2.33333333,8.44500563 2.33333333,11.6666667" id="Oval-3-Copy"></path>
+                        <circle id="Oval-2-Copy" cx="8.16666667" cy="3.5" r="3.5"></circle>
+                        <path d="M11.6666667,11.6666667 C11.6666667,8.44500563 9.05499437,5.83333333 5.83333333,5.83333333 C2.61167229,5.83333333 0,8.44500563 0,11.6666667" id="Oval-3"></path>
+                        <circle id="Oval-2" cx="5.83333333" cy="3.5" r="3.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

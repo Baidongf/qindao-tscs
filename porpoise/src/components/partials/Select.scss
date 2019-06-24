@@ -1,0 +1,60 @@
+@import '../../styles/_variables.scss';
+
+.select-custom {
+    display: inline-block;
+    width: 54px;
+    cursor: pointer;
+    vertical-align: middle;
+
+    span {
+        display: inline-block;
+        position: relative;
+        width: 44px;
+        height: 30px;
+        font-size: $font-M;
+        line-height: 32px;
+        padding-left: 8px;
+        color: $primary-black;
+        background-color: $background-color;
+        border-radius: 2px;
+
+        &:after, &.active:after {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            margin-top: -6px;
+            width: 6px;
+            height: 12px;
+            background: url('./assets/select_normal.svg') no-repeat;
+            background-size: contain;
+            content: '';
+        }
+        &.active:after {
+            background: url('./assets/select_hover.svg') no-repeat;
+        }
+    }
+
+    ul {
+        position: absolute;
+        margin: 4px 0 0;
+        padding: 6px 0;
+        background-color: $white;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+        z-index: 1;
+
+        li {
+            padding-left: 8px;
+            width: 46px;
+            height: 22px;
+            list-style: none;
+            line-height: 22px;
+            font-size: $font-S;
+            color: $primary-lighter-black;
+
+            &:hover, &.active {
+                color: $primary-black;
+                background-color: $background-color;
+            }
+        }
+    }
+}

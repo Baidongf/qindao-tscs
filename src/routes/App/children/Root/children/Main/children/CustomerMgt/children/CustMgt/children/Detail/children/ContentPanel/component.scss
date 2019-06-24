@@ -1,0 +1,44 @@
+.content-panel-component {
+  background: #ffffff;
+  margin-bottom: 16px;
+  border-radius: 7px;
+  overflow: hidden;
+
+  .content-title {
+    position: relative;
+    padding: 20px 25px;
+    border-bottom: 1px solid #f3f3f3;
+    color: #383838;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    vertical-align: top;
+
+    .panel-flag {
+      display: inline-block;
+      width: 4px;
+      height: 17px;
+      margin-right: 5px;
+      border-radius: 2px;
+      background-color: #d24545;
+      line-height: 17px;
+      vertical-align: top;
+    }
+
+    .addition {
+      position: absolute;
+      top: 14px;
+      right: 25px;
+
+      .finance-chart-button {
+        border-color: #d24545;
+        color: #d24545;
+
+        &:hover {
+          background: #d24545;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

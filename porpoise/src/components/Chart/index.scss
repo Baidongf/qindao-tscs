@@ -1,0 +1,527 @@
+.chart-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  .node {
+    cursor: pointer;
+    image {
+      cursor: pointer;
+    }
+    .circle {
+      // stroke: $re-background-color;
+      stroke-width: 4px;
+    }
+    .fluid-circle {
+      stroke: none;
+      fill: none;
+      stroke-width: 15px;
+      animation: scaleFluidCircle infinite;
+      animation-duration: 3s;
+      animation-timing-function: ease-out;
+    }
+    @mixin node-color ($color, $opacity:1) {
+      fill: rgba($color, $opacity);
+      stroke-width: 0px;
+    }
+    &.start-node .circle {
+      @include node-color(#0f0);
+    }
+    &.end-node .circle {
+      @include node-color(#f00);
+    }
+
+    &[node-type^='Company'] .circle,
+    &[node-type='Company_belong'] .circle {
+      fill: $re-primary-blue;
+      // stroke: $re-primary-blue;
+      // stroke-width: 2px;
+    }
+    &[node-type^='Company'] .fluid-circle,
+    &[node-type='Company_belong'] .fluid-circle {
+      fill: rgba(79, 162, 241, 0.5);
+      stroke: rgba(185, 189, 194, 0.4);
+    }
+    &[node-type='Person'] .circle,
+    &[node-type='Person_belong'] .circle {
+      fill: $re-primary-green;
+    }
+    &[node-type^='Person'] .fluid-circle,
+    &[node-type='Person_belong'] .fluid-circle {
+      fill: rgba(100, 198, 128, 0.5);
+      stroke: rgba(100, 198, 128, 0.4);
+    }
+    &[node-type='Company_blacklist'] .circle,
+    &[node-type='Person_blacklist'] .circle {
+      fill: $re-primary-black;
+    }
+    &[node-type^='Company_blacklist'] .fluid-circle,
+    &[node-type='Person_blacklist'] .fluid-circle {
+      fill: rgba(86, 94, 118, 0.5);
+      stroke: rgba(86, 94, 118, 0.4);
+    }
+    &[node-type='Company_graylist'] .circle,
+    &[node-type='Person_graylist'] .circle {
+      @include node-color(#fff);
+      stroke: #c2c2c2;
+      stroke-width: 4px;
+    }
+    &.blur-node {
+      .circle{
+        fill: #E9E9E9;
+      }
+      &[node-type='Company_blacklist'] .circle,
+      &[node-type='Person_blacklist'] .circle {
+        // stroke: #7a7a7a;
+      }
+      &[node-type='Company_graylist'] .circle,
+      &[node-type='Person_graylist'] .circle {
+        stroke: #d6d6d6;
+      }
+      .node-name {
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+      }
+    }
+    &.drag-node {
+      opacity: 0.5;
+    }
+    &.current-node {
+      &[node-type='Person'] .circle,
+      .circle,
+      &[node-type='Person_belong'] .circle {
+        @include node-color($re-primary-green);
+      }
+      &[node-type='Company'] .circle,
+      &[node-type='Company_belong'] .circle {
+        @include node-color($re-primary-blue);
+      }
+      &[node-type='Bid_detail'] .circle {
+        @include node-color($primary-purple);
+      }
+      &[node-type='Court_bulletin_doc'] .circle {
+        @include node-color($primary-gray);
+      }
+      &[node-type='Judge_process'] .circle {
+        @include node-color($primary-brown);
+      }
+      &[node-type='Judgement_wenshu'] .circle {
+        @include node-color($primary-yellow);
+      }
+      &[node-type='Court_announcement_doc'] .circle {
+        @include node-color($primary-slate-blue);
+      } // &[node-type='Company_belong'] .circle {
+      //     @include node-color($primary-green);
+      // }
+      &[node-type='Company_blacklist'] .circle,
+      &[node-type='Person_blacklist'] .circle {
+        @include node-color(#333);
+      }
+      &[node-type='Company_graylist'] .circle,
+      &[node-type='Person_graylist'] .circle {
+        @include node-color(#999);
+      }
+    }
+    &.hover-node {
+      &[node-type='Person'] .circle,
+      .circle,
+      &[node-type='Person_belong'] .circle {
+        @include node-color($re-primary-green, 0.5);
+        stroke-width: 4px;
+      }
+      &[node-type='Company'] .circle,
+      &[node-type='Company_belong'] .circle {
+        @include node-color($re-primary-blue, 0.5);
+        stroke-width: 4px;
+      }
+      &[node-type='Bid_detail'] .circle {
+        @include node-color($primary-purple, 0.6);
+      }
+      &[node-type='Court_bulletin_doc'] .circle {
+        @include node-color($primary-gray, 0.6);
+      }
+      &[node-type='Judge_process'] .circle {
+        @include node-color($primary-brown, 0.6);
+      }
+      &[node-type='Judgement_wenshu'] .circle {
+        @include node-color($primary-yellow, 0.6);
+      }
+      &[node-type='Court_announcement_doc'] .circle {
+        @include node-color($primary-slate-blue, 0.6);
+      }
+      // &[node-type='Company_belong'] .circle {
+      //     @include node-color($primary-green, 0.6);
+      // }
+      &[node-type='Company_blacklist'] .circle,
+      &[node-type='Person_blacklist'] .circle {
+        @include node-color(#7a7a7a, 0.6);
+        stroke: #7a7a7a;
+        stroke-width: 4px;
+      }
+      &[node-type='Company_graylist'] .circle,
+      &[node-type='Person_graylist'] .circle {
+        @include node-color(#d6d6d6, 0.6);
+        stroke: #d6d6d6;
+        stroke-width: 4px;
+      }
+    } // 群体关系节点
+    &[node-type='shareholder_mergeNode'] .circle {
+      @include node-color(#7A67CB);
+    }
+    &[node-type='money_flow_mergeNode'] .circle {
+      @include node-color(#F97411);
+    }
+    &[node-type='officer_mergeNode'] .circle {
+      @include node-color(#7F9EFF);
+    }
+    &[node-type='invest_mergeNode'] .circle {
+      @include node-color(#C3CD45);
+    }
+    &[node-type='concert_mergeNode'] .circle {
+      @include node-color(#41C7CA);
+    }
+    &[node-type*='_mergeNode'] .circle {
+      @include node-color(#3D79D8);
+    }
+    &[node-type='sue_mergeNode'] .circle {
+      @include node-color(#C9165D);
+    }
+    &[node-type='guarantee_mergeNode'] .circle {
+      @include node-color(#F8090C);
+    }
+    &[node-type='out_control_shareholder_mergeNode'] .circle {
+      @include node-color(#109E52);
+    }
+    &[node-type='out_actual_controller_mergeNode'] .circle {
+      @include node-color(#90D055);
+    }
+    @mixin stroke-color ($color, $opacity: 1) {
+      stroke-width: 3px;
+      stroke: rgba($color, $opacity);
+    }
+    &.current-node,
+    &.hover-node {
+      &[node-type='shareholder_mergeNode'] .circle {
+        @include stroke-color(#7A67CB, .4);
+      }
+      &[node-type='money_flow_mergeNode'] .circle {
+        @include stroke-color(#F97411, .4);
+      }
+      &[node-type='officer_mergeNode'] .circle {
+        @include stroke-color(#7F9EFF, .4);
+      }
+      &[node-type='invest_mergeNode'] .circle {
+        @include stroke-color(#C3CD45, .4);
+      }
+      &[node-type='concert_mergeNode'] .circle {
+        @include stroke-color(#41C7CA, .4);
+      }
+      &[node-type*='_mergeNode'] .circle {
+        @include stroke-color(#3D79D8, .4);
+      }
+      &[node-type='sue_mergeNode'] .circle {
+        @include stroke-color(#C9165D, .4);
+      }
+      &[node-type='guarantee_mergeNode'] .circle {
+        @include stroke-color(#F8090C, .4);
+      }
+      &[node-type='out_control_shareholder_mergeNode'] .circle {
+        @include stroke-color(#109E52, .4);
+      }
+      &[node-type='out_actual_controller_mergeNode'] .circle {
+        @include stroke-color(#90D055, .4);
+      }
+    } // 群体关系节点 end
+  }
+  .node-name {
+    cursor: pointer;
+    stroke: none;
+    fill: #42444C;
+    &.node-name-blur {
+      fill: #a3a9b0;
+    }
+    &.node-name-highlight {
+      // fill: $primary-black;
+      // font-weight: bold;
+    }
+    .risk-status {
+      fill: $risk-red;
+    }
+  }
+  .link-name {
+    fill: #b3b3b3;
+    text-anchor: middle; // &.officer {
+    //     fill: #FFCEA2;
+    // }
+    // &.invest {
+    //     fill: #A9D9FF;
+    // }
+    // &.guarantee, &.actual_controller, &.concert, &.control_shareholder, &.control_shareholders {
+    //     fill: $primary-red;
+    // }
+    &.link-name-highlight {
+      fill: $primary-black;
+    }
+  }
+  .arrow-marker {
+    fill: #d9d9d9;
+    &.highlight {
+      fill: #475461;
+    }
+    &.highlight_company{
+      fill: $re-primary-blue
+    }
+    &.highlight_person{
+      fill: $re-primary-green
+    }
+    &.highlight_black{
+      fill: $re-primary-black
+    }
+    // &.invest, &.shareholder {
+    //     fill: #A9D9FF;
+    // }
+    // &.officer {
+    //     fill: #FFCEA2;
+    // }
+    // &.guarantee, &.actual_controller, &.concert, &.control_shareholder, &.control_shareholders {
+    //     fill: $primary-red;
+    // }
+  }
+  .links {
+    cursor: default;
+    .clickable-link:hover {
+      cursor: pointer;
+    }
+  }
+  .link {
+    stroke: #d9d9d9;
+    fill: none; // &.officer {
+    //     stroke: #FFCEA2;
+    // }
+    // &.invest {
+    //     stroke: #A9D9FF;
+    // }
+    // &.guarantee, &.actual_controller, &.concert, &.control_shareholder, &.control_shareholders {
+    //     stroke: $primary-red;
+    // }
+    &.link-highlight {
+      // stroke: #475461;
+      stroke-width: 2;
+      // &+.link-name {
+        // fill: #475461;
+      // }
+    }
+    &.Company-link-highlight {
+      stroke: $re-primary-blue;
+      &+.link-name {
+        fill: $re-primary-blue;
+      }
+    }
+    &.Person-link-highlight {
+      stroke: $re-primary-green;
+      &+.link-name {
+        fill: $re-primary-green;
+      }
+    }
+    &.black-link-highlight {
+      stroke: $re-primary-black;
+      &+.link-name {
+        fill: $re-primary-black;
+      }
+    }
+    &.link-blur {
+      opacity: .3;
+      &+.link-name {
+        opacity: .3;
+      }
+    }
+    &.link-dashed {
+      stroke-dasharray: 5, 5;
+    }
+  }
+}
+
+.chart-title {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  width: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  color: #e09200;
+}
+
+.chart-container.bubble-chart {
+  .core-node {
+    fill: red;
+  }
+  .arrow-marker {
+    fill: #adadad;
+  }
+  .node-in-path.current-node {
+    .node-circle {
+      stroke-width: 10px;
+      &.company {
+        stroke: #9fd0f9;
+      }
+      &.person {
+        stroke: #abe27b;
+      }
+    }
+  }
+}
+
+.tag-desc-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 12px 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #757f89;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.29);
+  background: #fff;
+  .tag-list {
+    list-style: none;
+    .tag-item::before {
+      display: inline-block;
+      content: '';
+      margin-right: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .blacklist::before, .belong::before, .listed::before {
+      background: #EE5B77;
+    }
+    .core::before {
+      border-radius: 0;
+      border: 12px solid orange;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid transparent;
+      width: 0;
+      height: 0;
+    }
+  }
+  .show-desc-detail {
+    display: inline-block;
+    margin-left: 2px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #757f89;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 12px;
+  }
+  .title {
+    cursor: pointer;
+    &:hover {
+      &+.tag-desc-detail {
+        display: block;
+      }
+    }
+  }
+  .tag-desc-detail {
+    display: none;
+    position: absolute;
+    top: -54px;
+    right: 85px;
+    padding: 10px;
+    width: 400px;
+    background: #fff;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .29);
+    .tag-desc-detail-list {
+      list-style: none;
+    }
+  }
+}
+
+
+.light {
+  $re-background-color: #F6F6F6;
+  .chart-container{
+    .circle {
+      stroke: $re-background-color;
+    }
+    .node{
+      &.hover-node {
+        &[node-type='Person'] .circle,
+        .circle,
+        &[node-type='Person_belong'] .circle {
+          stroke: $re-background-color;
+        }
+        &[node-type='Company'] .circle,
+        &[node-type='Company_belong'] .circle {
+          stroke: $re-background-color;
+        }
+      }
+    }
+  }
+}
+
+.deep {
+  $re-background-color: #252A39;
+  .chart-container{
+    .circle {
+      stroke: $re-background-color;
+    }
+    .node{
+      &.hover-node {
+        &[node-type='Person'] .circle,
+        .circle,
+        &[node-type='Person_belong'] .circle {
+          stroke: $re-background-color;
+        }
+        &[node-type='Company'] .circle,
+        &[node-type='Company_belong'] .circle {
+          stroke: $re-background-color;
+        }
+      }
+      &.blur-node{
+        .circle{
+          fill: #323A4D;
+        }
+      }
+    }
+    .node-name{
+      fill: #fff;
+    }
+    .link{
+      stroke: #3C4257;
+    }
+    .link-name{
+      fill: #808593;
+    }
+  }
+}
+
+@keyframes scaleFluidCircle {
+  0% {
+    transform: scale(0.8);
+    fill-opacity: 0;
+    opacity: 0.3
+  }
+  10%{
+    fill-opacity: 0;
+  }
+  25% {
+    transform: scale(1.05);
+    opacity: 1;
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
+  100% {
+    transform: scale(1.05);
+    stroke-opacity: 0;
+    opacity: 0;
+  }
+}
+
+.home-operate-btns {
+  .operate-btn-container {
+    top: 138px;
+  }
+}

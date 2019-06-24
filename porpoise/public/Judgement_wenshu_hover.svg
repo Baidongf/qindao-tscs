@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 44 (41325) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 32 Copy 2</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 20 0 20 20 0 20"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="Group-32-Copy-2">
+            <g id="Group-12">
+                <g transform="translate(12.000000, 12.000000)">
+                    <g id="Shape-Copy-13" opacity="0">
+                        <use fill="#E8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#D0D0D0" stroke-width="2" d="M1,1 L1,19 L19,19 L19,1 L1,1 Z"></path>
+                    </g>
+                    <g id="Group-11" transform="translate(3.000000, 2.000000)">
+                        <path d="M8.14711432,6.91506351 L8.39711432,7.34807621 L7.96410162,7.59807621 L8.46410162,8.46410162 L10.1961524,7.46410162 L9.69615242,6.59807621 L9.26313972,6.84807621 L8.26313972,5.1160254 L8.69615242,4.8660254 L8.19615242,4 L6.46410162,5 L6.96410162,5.8660254 L7.39711432,5.6160254 L7.64711432,6.04903811 L3.75,8.29903811 L4.25,9.16506351 L8.14711432,6.91506351 Z M2,2 L14,2 L14,16 L2,16 L2,2 Z M8,10 L8,11 L12,11 L12,10 L8,10 Z M4,12 L4,13 L12,13 L12,12 L4,12 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                        <path d="M11,0.5 L0.5,0.5 L0.5,13 L1,12.5 L0,12.5 L0.5,13 L0.5,0 L0,0.5 L11,0.5 L10.5,-8.8817842e-16 L10.5,1 L11,0.5 Z" id="Combined-Shape" stroke="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

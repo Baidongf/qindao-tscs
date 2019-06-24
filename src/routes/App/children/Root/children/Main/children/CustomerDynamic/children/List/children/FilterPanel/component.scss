@@ -1,0 +1,37 @@
+.filter-panel-component {
+  background-color: #ffffff;
+  padding: 25px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+
+  .first-row-container {
+    .institution-container {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+
+  .second-row-container {
+    margin-top: 16px;
+
+    .input {
+      width: 890px;
+    }
+
+    .search-button {
+      background-color: #d24545;
+      color: #ffffff;
+      margin-left: 15px;
+      width: 85px;
+    }
+
+    .reset-button {
+      display: inline-block;
+      margin-left: 15px;
+      font-size: 14px;
+      color: #b3b3b3;
+      cursor: pointer;
+    }
+  }
+
+}

@@ -1,0 +1,303 @@
+.custList-component {
+  background: #f0f0f0;
+  overflow: hidden;
+
+  .custList-left {
+    float: left;
+    width: 842px;
+    box-shadow: 0px 5px 15px 0px rgba(230, 230, 230, 0.24);
+
+    .filter-area {
+      background: #fff;
+      padding: 0 25px;
+
+      .filter-info {
+        overflow: hidden;
+        .inputs {
+          float: left;
+        }
+
+        .buttons {
+          display: inline-block;
+          margin-left: 10px;
+
+          .btn-item {
+            margin-left: 4px;
+          }
+
+          .search-button {
+            // width: 85px;
+          }
+
+          .reset-button {
+            display: inline-block;
+            margin-left: 10px;
+            color: #adadad;
+            cursor: pointer;
+          }
+        }
+      }
+      .filter-result {
+        // height: auto;
+        // max-height: 80px;
+        margin-top: 20px;
+        // overflow: hidden;
+        .filter-factor,
+        .result-content {
+          float: left;
+        }
+      }
+
+      .filter-result-placeholder {
+        height: 20px;
+      }
+    }
+
+    .result-area {
+      background: #fff;
+      // padding: 25px;
+      padding-bottom: 25px;
+      border-radius: 7px;
+      margin-top: 14px;
+
+      .list-header {
+        padding: 25px;
+
+        .total-area {
+          float: left;
+
+          .total-num {
+            margin: 0 2px;
+            color: #d24545;
+          }
+        }
+
+        .btns {
+          float: right;
+          // background: url("./images/regCapital.png") no-repeat right center;
+          padding-right: 14px;
+          font-size: 12px;
+          color: #5b5b5b;
+          cursor: pointer;
+          img{
+            margin-left: 6px;
+            width: 9px;
+            height: 11px;
+          }
+        }
+      }
+
+      .list-area {
+        .list-title {
+          position: relative;
+          height: 40px;
+          line-height: 40px;
+          font-weight: 500;
+          color: rgba(56, 56, 56, 1);
+          font-size: 14px;
+          padding: 0 30px 0 25px;
+
+          .register-title {
+            position: absolute;
+            left: 490px;
+            width: 110px;
+            text-align: center;
+            cursor: pointer;
+
+            &.last-title-column {
+              left: 590px;
+            }
+          }
+
+          .manager-title {
+            position: absolute;
+            left: 618px;
+            width: 110px;
+            text-align: center;
+          }
+          .operation-title {
+            position: absolute;
+            left: 750px;
+          }
+        }
+
+        .list-detail {
+          overflow: hidden;
+          padding: 20px 25px;
+          margin-bottom: 20px;
+
+          &:hover {
+            background-color: #f6f6f6;
+            cursor: pointer;
+          }
+
+          .customer-detail,
+          .register-detail,
+          .manager-detail {
+            float: left;
+          }
+          .operation-detail {
+            float: right;
+          }
+          .customer-detail {
+            width: 462px;
+            overflow: hidden;
+
+            .customer-img {
+              float: left;
+              width: 98px;
+              margin-right: 12px;
+            }
+            .customer-content {
+              float: left;
+              width: 352px;
+
+              .customer-name {
+                font-weight: 600;
+                color: rgba(210, 69, 69, 1);
+
+                .customer-id {
+                  margin-left: 4px;
+                }
+              }
+
+              .customer-info {
+                font-weight: 400;
+                color: #5b5b5b;
+                line-height: 18px;
+                font-size: 12px;
+                overflow: hidden;
+
+                .fixed-width {
+                  display: inline-block;
+                  width: 146px;
+                  margin-top: 2px;
+                }
+
+                .manage-range {
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 2;
+                  margin-top: 2px;
+                  overflow: hidden;
+                  /* autoprefixer: off */
+                  -webkit-box-orient: vertical;
+                  /* autoprefixer: on */
+                }
+              }
+
+              .customer-market {
+                overflow: hidden;
+                .listing-detail {
+                  float: left;
+                  box-sizing: border-box;
+                  min-width: 60px;
+                  padding: 2px 5px;
+                  margin-top: 5px;
+                  margin-right: 8px;
+                  font-weight: 400;
+                  text-align: center;
+                  color: rgba(255, 255, 255, 1);
+                  font-size: 12px;
+                  background: rgba(210, 69, 69, 1);
+                  border-radius: 5px;
+                  // overflow: hidden;
+                  // text-overflow: ellipsis;
+                  // white-space: nowrap;
+                }
+              }
+            }
+          }
+
+          .register-detail,
+          .manager-detail {
+            width: 110px;
+            padding-top: 11px;
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(91, 91, 91, 1);
+            line-height: 18px;
+            text-align: center;
+
+            &.last-detail-column {
+              margin-left: 100px;
+            }
+
+          }
+          .manager-detail {
+            margin-left: 25px;
+          }
+          .operation-detail {
+            width: 64px;
+            margin-right: 24px;
+            text-align: center;
+          }
+        }
+
+        .no-search-result-tips {
+          text-align: center;
+          padding: 50px 0 62px 0;
+          color: #adadad;
+        }
+
+        .cust-pagination {
+          padding-right: 25px;
+          text-align: right;
+        }
+      }
+    }
+  }
+  .custList-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f0f0f0;
+    width: 258px;
+    height: 328px;
+    padding-left: 15px;
+  }
+  .sort-icon {
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 5px;
+    &::before{
+      content: "";
+      display: inline-block;
+      height: 0;
+      width: 0;
+      border-bottom: 5.5px solid #bfbfbf;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 0;
+      position: absolute;
+      top: 4px;
+      left: 0;
+    }
+    &::after{
+      content: "";
+      display: inline-block;
+      height: 0;
+      width: 0;
+      border-top: 5.5px solid #bfbfbf;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &.asc-icon {
+      &::before {
+        border-bottom-color: #d24545;
+      }
+    }
+    &.desc-icon {
+      &::after {
+        border-top-color: #d24545;
+      }
+    }
+  }
+}

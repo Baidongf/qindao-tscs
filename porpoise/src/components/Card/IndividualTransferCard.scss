@@ -1,0 +1,84 @@
+.indiv-transfer-card {
+  .card-body {
+    .filter-panel {
+      margin: 12px 46px 0 0px;
+      .search-button {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin-top: 18px;
+        float: right;
+        color: #fff;
+        background-color: #008cff;
+        border: none;
+      }
+      .custom-checkbox {
+        margin-right: 5px;
+        font-size: 12px;
+        &:before {
+          margin-right: 5px;
+        }
+      }
+      .error {
+        margin-top: 5px;
+        color: red;
+      }
+      .hide {
+        display: none;
+      }
+    }
+
+    .table2 {
+      text-align: center;
+      border-spacing: 0;
+      border: 1px solid #E8E9EB;
+      border-bottom: 0;
+      width: 310px;
+      .odd {
+        background-color: rgba(56, 150, 248, 0.03);
+      }
+      .td2 {
+        height: 31px;
+        padding: 0 2px 0 2px;
+        border-bottom: 1px solid $filter-border-color;
+        border-right: 1px solid $filter-border-color;
+      }
+      .td2:last-child {
+        border-right: 0;
+      }
+      .tbody .tr2:last-child {
+          .td2 {
+            border-bottom: 0;
+          }
+      }
+    }
+
+    .pagination-container {
+      float: right;
+      margin: 10px 10px 0 0;
+      .rc-pagination {
+        .rc-pagination-total-text {
+          height: 20px;
+          line-height: 20px;
+        }
+        .rc-pagination-jump-next,
+        .rc-pagination-jump-prev,
+        .rc-pagination-next,
+        .rc-pagination-prev,
+        .rc-pagination-item {
+          border-radius: 2px;
+          height: 18px;
+          min-height: 18px;
+          min-width: 18px;
+          line-height: 18px;
+          &:hover {
+              border-color: #008cff;
+          }
+          &.rc-pagination-item-active {
+              background-color: #008cff;
+              border-color: #008cff;
+          }
+        }
+      }
+    }
+  }
+}

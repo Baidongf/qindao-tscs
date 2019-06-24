@@ -1,0 +1,73 @@
+.list-component {
+  .breadcrumb-area {}
+
+  .filter-area {
+    background: #fff;
+    height: 72px;
+    line-height: 72px;
+    padding: 0 16px;
+
+    .inputs {
+      float: left;
+
+      .input-item {
+        margin-right: 8px;
+      }
+    }
+
+    .buttons {
+      float: right;
+      margin-right: 8px;
+
+      .btn-item {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .result-area {
+    background: #fff;
+    padding: 16px 0;
+    margin-top: 14px;
+
+    .list-header {
+      line-height: 49px;
+      padding: 0 16px;
+
+      .total-area {
+        float: left;
+
+        .total-num {
+          margin: 0 2px;
+          color: #D24545;
+        }
+      }
+
+      .btns {
+        float: right;
+
+        .btn-create {
+        }
+      }
+
+    }
+
+    .table-area {
+
+      .operation-area {
+        .btn-item {
+          margin-right: 20px;
+          color: #1890ff;
+          cursor: pointer;
+        }
+      }
+
+      .td-name {
+        width: 120px;
+      }
+    }
+
+    .footer {}
+  }
+  .divstyle{width:100px; height:200px; float:left; border:solid 1px green}
+}

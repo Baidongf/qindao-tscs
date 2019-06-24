@@ -1,0 +1,145 @@
+.card {
+    float: left;
+    margin: 8px;
+    width: 344px;
+    line-height: 1;
+    background-color: $white;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.29);
+
+    .card-header {
+        position: relative;
+        padding: 16px 16px 36px;
+        color: $white;
+        background-color: $primary-blue;
+
+        .company-address{
+          color: $white;
+        }
+
+        .name {
+            float: left;
+            margin: 0 4px 4px 0;
+            font-size: $font-L;
+        }
+
+        .fold-card-icon {
+            position: absolute;
+            top: 6px;
+            right: -18px;
+            width: 12px;
+            height: 12px;
+            background: url('../components/Card/assets/close_normal.svg') no-repeat;
+            background-size: cover;
+            cursor: pointer;
+            &:hover {
+                background: url('../components/Card/assets/close_hover.svg') no-repeat;
+            }
+        }
+
+        .card-back-wrapper {
+            display: inline-block;
+            font-size: $font-M;
+            margin-bottom: 10px;
+            cursor: pointer;
+            .back {
+                float: left;
+                width: 14px;
+                height: 14px;
+                background: url("../components/Card/assets/back.svg") no-repeat center;
+            }
+            .back-text {
+                float: left;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .card-header.fold-card {
+        padding: 15px 16px;
+        background-color: $white;
+        color: $primary-black;
+        line-height: 18px;
+        .fold-name {
+            margin: 0;
+            width: 100%;
+            cursor: pointer;
+            display: table;
+            .fold-name-icon {
+                width: 17px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .fold-name-content {
+                width: calc(100% - 20px);
+                display: inline-block;
+            }
+            .fold-relation-btn {
+                background: url('../components/Card/assets/relationship_normal.svg') no-repeat;
+                width: 17px;
+                height: 17px;
+                cursor: pointer;
+                float: right
+            }
+        }
+        .relation-btn {
+            right: 0;
+            bottom: 0;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
+
+    .relation-btn {
+        position: absolute;
+        right: 16px;
+        bottom: -24px;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 1;
+        box-shadow: 0 1px 4px 0 rgba(71, 84, 97, 0.48);
+        background: $white url("../components/Card/assets/relationship_normal.svg") no-repeat center;
+        &:hover {
+            background: $white url("../components/Card/assets/relationship_hover.svg") no-repeat center;
+        }
+    }
+
+    .card-body {
+        position: relative;
+        padding: 16px 8px 16px 16px;
+        .description-list {
+            margin: 0;
+            padding-right: 16px;
+            max-height: 328px;
+            overflow: auto;
+            line-height: 1.2;
+
+            div {
+                @extend .clearfix;
+                margin-bottom: 6px;
+            }
+
+            dt {
+                float: left;
+                color: $primary-black;
+                &:after {
+                    content: ':';
+                }
+            }
+
+            dd {
+                color: $primary-gray;
+                margin-left: 9em;
+                text-align: justify;
+                word-wrap: break-word;
+                word-break: break-word;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .card-body.fold-card {
+        display: none;
+    }
+}

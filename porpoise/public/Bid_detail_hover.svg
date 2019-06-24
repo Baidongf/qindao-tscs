@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 44 (41325) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 25 Copy 3</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 20 0 20 20 0 20"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="Group-25-Copy-3">
+            <g id="Group-10-Copy">
+                <g transform="translate(12.000000, 12.000000)">
+                    <g id="Shape-Copy-16" opacity="0">
+                        <use fill="#E8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#D0D0D0" stroke-width="2" d="M1,1 L1,19 L19,19 L19,1 L1,1 Z"></path>
+                    </g>
+                    <path d="M3,2 L17,2 L17,18 L3,18 L3,2 Z M5,4 L5,9 L6.5,8 L8,9 L8,4 L5,4 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,138 @@
+.risk-info-layout {
+  position: absolute;
+  z-index: 100;
+  top: 17.5%;
+  left: 345px;
+  box-sizing: border-box;
+  width: 565px;
+  padding: 24px 24px 48px 24px;
+  box-shadow:0px 5px 15px 0px rgba(221,221,221,0.4);
+  border-radius:10px;
+  background: #fff;
+  &.risk-hide {
+    display: none;
+  }
+  .risk-info-header {
+    .title {
+      font-size:14px;
+      font-weight: bold;
+      color:#42444C;
+
+      margin-bottom: 14px;
+
+      &::before{
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 3px;
+        background: #42444C;
+      }
+    }
+    .i-close {
+      float: right;
+      display: block;
+      width: 17px;
+      height: 17px;
+      background: url('../assets/icon_close.png') no-repeat;
+      background-position: center;
+      background-size: 100%;
+      cursor: pointer;
+    }
+  }
+  .risk-info-container {
+    color: #5b5b5b;
+    .risk-info-sub-title {
+      color: #5B5B5B;
+      font-size: 14px;
+      margin-top: 14px;
+      .company-name {
+        font-size: 16px;
+        color: #4FA2F1;
+        line-height: 22px;
+      }
+    }
+    .risk-info-body {
+      margin-top: 30px;
+      line-height: 24px;
+      font-size: 16px;
+      color: #333333;
+      max-height: 375px;
+      overflow-y: auto;
+      .risk-detail {
+        color: #333333;
+        font-size: 14px;
+        // line-height: 14px;
+      }
+      .detail-item, .detail-item {
+        margin-top: 10px;
+        // line-height: 18px;
+        &:first-of-type {
+          margin-top: 0;
+        }
+        .title {
+          font-weight: bold;
+          float: left;
+          width: 85px;
+          text-align: right;
+          color: #42444C;
+          font-size: 12px;
+        }
+        .content {
+          width: 390px;
+          color: #5b5b5b;
+          float: right;
+          font-size: 14px;
+        }
+      }
+      .table-container {
+        overflow: auto;
+        width: 100%;
+      }
+      table {
+        width: 100%;
+        margin-top: 12px;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 12px;
+        line-height: 12px;
+        color: #666666;
+        thead {
+          background: #f7f7f7;
+          color: #999;
+        }
+        th, td {
+          padding: 10px 10px 9px 10px;
+          border: 1px solid #e8e8e8;
+          font-weight: 400;
+          text-align: left;
+          line-height: 18px;
+          min-width: 100px;
+          &:last-child {
+            text-align: center;
+          }
+        }
+        .rank-btn {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          vertical-align: text-bottom;
+          background-image: url('../assets/btn_rank_normal.png');
+          &.up {
+            background-image: url('../assets/btn_rank_up.png');
+          }
+          &.down {
+            background-image: url('../assets/btn_rank_down.png');
+          }
+        }
+      }
+      .risk-graph {
+        margin-top: 20px;
+        .relative-reason {
+          color: #42444c;
+        }
+      }
+    }
+  }
+}

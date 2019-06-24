@@ -1,0 +1,45 @@
+.filter-nav-wrap {
+    margin: 8px 8px 0 0;
+    box-shadow: $box-shadow;
+
+    .filter-nav-item {
+        float: left;
+        position: relative;
+        padding: 10px 16px;
+        width: 118px;
+        height: 20px;
+        line-height: 20px;
+        font-size: $font-M;
+        color: $primary-gray;
+        background-color: $white;
+        cursor: pointer;
+        & + .filter-nav-item {
+            width: 117px;
+            border-left: 1px solid $filter-border-color;
+        }
+        &:hover, &.active {
+            color: $primary-black;
+            font-weight: bold;
+            .triangle {
+                border-top-color: $primary-black;
+            }
+            .triangle-up {
+                border-color: transparent;
+                border-bottom-color: $primary-black;
+            }
+        }
+
+        .triangle {
+            position: absolute;
+            right: 0;
+            margin-right: 15px;
+            margin-top: -2px;
+            top: 50%;
+        }
+        .triangle-up {
+            top: 0;
+            margin-bottom: -2px;
+            bottom: 50%;
+        }
+    }
+}

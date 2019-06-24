@@ -1,0 +1,120 @@
+.collaboration-list-component {
+  background-color: #f0f0f0;
+  .filter-area {
+    background: #fff;
+    height: 140px;
+    line-height: 56px;
+    padding: 0 25px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    .inputs {
+      .input-item {
+        margin-right: 15px;
+
+        &.last-input-item {
+          margin-right: 0;
+        }
+
+        &.bg-white {
+          background-color: white;
+        }
+      }
+    }
+
+    .buttons {
+      display: inline-block;
+      margin-left: 15px;
+
+      .btn-item {
+        margin-right: 15px;
+      }
+
+      .reset-btn {
+        color: #b3b3b3;
+      }
+    }
+    .btn-export {
+      margin-right: 20px;
+    }
+  }
+
+  .result-area {
+    background: #fff;
+    margin-top: 14px;
+    border-radius: 7px;
+
+    .list-header {
+      position: relative;
+      padding: 25px;
+
+      .total-area {
+        font-size: 12px;
+        .total-num {
+          color: #d24545;
+        }
+      }
+
+      .btns {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+
+        .btn-create {
+          margin-right: 15px;
+        }
+
+        .btn-export {
+          border-color: #d24545;
+          color: #d24545;
+        }
+      }
+    }
+
+    .table-area {
+      .operation-area {
+        .btn-item {
+          margin-right: 20px;
+          color: #1890ff;
+          cursor: pointer;
+        }
+      }
+
+      .td-name {
+        width: 120px;
+        padding-left: 25px;
+      }
+      .list-detail {
+        margin-top: 10px;
+      }
+      .listing-detail {
+        height: 24px;
+        line-height: 24px;
+        padding: 3px 5px;
+        text-align: center;
+        font-weight: 400;
+        color: #5b5b5b;
+        border: 1px solid rgba(242, 242, 242, 1);
+
+        font-size: 12px;
+        background: rgba(242, 242, 242, 1);
+        border-radius: 5px;
+        margin-right: 8px;
+        &.one {
+          color: #5b5b5b;
+          background: rgba(242, 242, 242, 1);
+        }
+        &.inner-tag {
+          border: 1px solid #50bc4e;
+          color: #50bc4e;
+          background: rgba(80, 188, 78, 0.1);
+        }
+        &.outer-tag {
+          border: 1px solid #ff7f3a;
+          color: #ff7f3a;
+          background-color: rgba(255, 127, 58, 0.1);
+        }
+      }
+    }
+  }
+}

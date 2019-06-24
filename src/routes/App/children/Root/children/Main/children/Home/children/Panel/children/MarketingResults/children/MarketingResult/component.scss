@@ -1,0 +1,68 @@
+.marketing-result {
+  .result-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #383838;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+
+    .icon {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      margin-right: 2px;
+      margin-bottom: 10px;
+      background-size: 100%;
+      vertical-align: top;
+
+      &.icon-deposit {
+        background-image: url('./images/icon-stock.png');
+      }
+
+      &.icon-balance {
+        background-image: url('./images/icon-pig.png');
+      }
+
+      &.icon-loan {
+        background-image: url('./images/icon-loan.png');
+      }
+    }
+  }
+
+  .result-data {
+
+    margin-bottom: 5px;
+    font-size: 36px;
+    font-weight: 600;
+
+    .icon {
+      display: inline-block;
+      width: 15px;
+      height: 20px;
+      margin-left: 2px;
+      background-size: 100%;
+      vertical-align: baseline;
+
+      &.arrow-up {
+        background-image: url('./images/arrow-up.png');
+      }
+
+      &.arrow-down {
+        background-image: url('./images/arrow-down.png');
+      }
+    }
+  }
+
+  .result-desc {
+    font-size: 14px;
+  }
+
+  .color-red {
+    color: #d24545;
+  }
+
+  .color-green {
+    color: #67d247;
+  }
+}

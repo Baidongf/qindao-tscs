@@ -1,0 +1,112 @@
+.account-operation-component {
+  display: inline-block;
+  margin-left: 8px;
+  width: 56px;
+  height: 32px;
+
+  .account-assign {
+    display: inline-block;
+    border: 1px solid #d24545;
+    width: 56px;
+    height: 24px;
+    margin-top: 7px;
+    border-radius: 24px;
+    color: #d24545;
+    font-size: 12px;
+
+    &:hover {
+      color: #fff;
+      background: #D24545;
+    }
+  }
+}
+
+.account-assign-popup {
+  .account-assign-content {
+    // border: 1px solid black;
+    padding-bottom: 20px;
+
+    .line-container {
+      margin: 0 20px 20px 20px;
+      font-size: 14px;
+      color: #5b5b5b;
+
+      .placeholder-span {
+        visibility: hidden;
+      }
+
+      .line-left {
+
+        &.left-label-fixed {
+          position: relative;
+          top: 6px;
+        }
+      }
+
+      .line-right {
+        display: inline-block;
+        width: 660px;
+        padding: 6px;
+        margin-left: 15px;
+        border: 1px solid #dcdcdc;
+        border-radius: 7px;
+
+        &.line-right-container {
+          width: 700px;
+          vertical-align: top;
+          padding: 0;
+          border: none;
+          border-radius: 0;
+        }
+
+        .cascader-container {
+          margin-bottom: 20px;
+          .input-customer-manager {
+            width: 460px;
+          }
+
+          .percent-input {
+            display: inline-block;
+            margin-left: 20px;
+            width: 180px;
+          }
+
+          .remove-manager {
+            display: inline-block;
+            margin-left: 15px;
+            cursor: pointer;
+          }
+        }
+
+        .add-manager-area {
+
+          // display: inline-block;
+          position: relative;
+
+          .add-click-area {
+            cursor: pointer;
+
+            .icon {
+              display: inline-block;
+              vertical-align: center;
+            }
+
+            .wording {
+              display: inline-block;
+              margin-left: 5px;
+            }
+          }
+
+          .warning {
+            position: absolute;
+            right: 0px;
+            display: inline-block;
+            vertical-align: middle;
+            color: red;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_treemap_normal</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon_treemap_normal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_map_normal">
+            <rect id="Rectangle-7" fill="#FFFFFF" opacity="0" x="0" y="0" width="16" height="16"></rect>
+            <path d="M4.5,12.55 L4.5,10.6 C4.5,9.16405965 5.66405965,8 7.1,8 L8.9,8 C10.3359403,8 11.5,9.16405965 11.5,10.6 L11.5,12.55" id="Path-5" stroke="#BDBDBD" stroke-width="0.8"></path>
+            <path d="M8,4 L8,12" id="Path-33" stroke="#BDBDBD" stroke-width="0.8"></path>
+            <circle id="Oval-3-Copy-7" fill="#BDBDBD" cx="8" cy="8" r="1"></circle>
+            <circle id="Oval-3" fill="#BDBDBD" cx="7.99999976" cy="4.29999995" r="1.29999995"></circle>
+            <circle id="Oval-3-Copy-4" fill="#BDBDBD" cx="11.5" cy="12" r="1"></circle>
+            <circle id="Oval-3-Copy-5" fill="#BDBDBD" cx="4.5" cy="12" r="1"></circle>
+            <circle id="Oval-3-Copy-6" fill="#BDBDBD" cx="8" cy="12" r="1"></circle>
+        </g>
+    </g>
+</svg>

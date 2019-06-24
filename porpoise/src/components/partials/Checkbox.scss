@@ -1,0 +1,22 @@
+.custom-checkbox {
+    display: inline-block;
+    line-height: 14px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:before {
+        display: inline-block;
+        content: '';
+        margin-right: 8px;
+        vertical-align: middle;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #A3A9B0;
+    }
+    &.checked:before {
+        width: 14px;
+        height: 14px;
+        background: url('./assets/checkbox_checked.svg') no-repeat;
+        border: none;
+    }
+}

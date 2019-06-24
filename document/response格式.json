@@ -1,0 +1,40 @@
+参考链接： https://www.showdoc.cc/graph201?page_id=1377690629358591
+
+/* status为200时，data的格式 -START */
+  // 1、列表响应格式：
+    {
+    "message": {"code":"0001","desc":"错误描述"}, // —错误提示信息
+    "payload": {"data":[{},{}],"pageNo": 1, "pageSize": 10,"total": 100, "totalPages": 1 }, // —消息响应数据体
+    "success": true // —成功失败标示：true（成功）；false（失败）
+    }
+
+  // 2、单条记录查询响应格式：
+    {
+    "message": {"code":"0001","desc":"错误描述"},
+    "payload": {"data":{}},
+    "success": true
+    }
+
+    // 3、success为false的情况
+    {
+      "success": false,
+      "message": {
+      "code": 10022,
+      "desc": "用户重新加载权限失败"
+      }
+    }
+/* status为200时，data的格式 -END */
+
+
+/* 为404、500等，data的格式 -START */
+  {
+    "timestamp":1546684977086,
+    "status":404,
+    "error":"Not Found",
+    "message":"No message available", // 和成功时格式不一样，成功时对象
+    "path":"/crm-fd/api/message/findMessage/messageCenter"
+  }
+/* 为404、500等，data的格式 -END */
+
+
+

@@ -1,0 +1,119 @@
+.card.company-cluster {
+    width: 340px;
+    background-color: transparent;
+    box-shadow: none;
+
+    .fold-card-icon {
+        display: none;
+    }
+
+    .card-header {
+        height: 40px;
+        padding: 0;
+        margin-bottom: 8px;
+        background-color: $white;
+        box-shadow: 0 1px 7px 0 rgba(0,0,0,.29);
+
+        .name {
+            margin: 0 0 0 16px;
+            line-height: 40px;
+            font-size: $font-M;
+            font-weight: normal;
+            color: $primary-gray;
+            .cluster, .guarantee {
+                cursor: pointer;
+                &:hover {
+                    color: darken($primary-gray, 5);
+                }
+                & a:visited {
+                    color: $primary-gray;
+                }
+            }
+            .active, .active:hover {
+                color: $primary-blue;
+            }
+        }
+
+        .triangle-wrapper {
+            margin: 14px 25px 0 0;
+            cursor: pointer;
+        }
+    }
+
+    .card-body {
+        background-color: $white;
+        box-shadow: 0 1px 7px 0 rgba(0,0,0,.29);
+
+        .search-input {
+            width: 250px;
+            height: 30px;
+            padding: 0 46px 0 10px;
+            margin: 0 0 24px;
+        }
+        .search-delete-button, .search-button {
+            top: 5px;
+            right: 4px;
+        }
+        .search-delete-button {
+            right: 26px;
+        }
+        .search-suggested-ul {
+            width: 310px;
+            top: 35px;
+            z-index: 1;
+        }
+        .description-list {
+            max-height: 204px;
+        }
+    }
+
+    .card-body .cluster-list {
+        .checked-cluster-item ol li {
+            cursor: pointer;
+            font-size: $font-S;
+            color: $primary-gray;
+            &.highlight-name {
+                color: $primary-red;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .cluster-item .custom-checkbox {
+            max-width: 280px;
+            line-height: 20px;
+        }
+
+        .cluster-item-ol {
+            list-style: none;
+            padding-left: 30px;
+            li {
+                margin-top: 6px;
+                &:last-child {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .company-link {
+          color: $primary-blue;
+        }
+    }
+
+    .triangle-wrapper {
+        position: relative;
+        float: right;
+        cursor: pointer;
+        .triangle {
+            position: absolute;
+            margin-top: 5px;
+        }
+        .triangle-up {
+            margin-top: 1px;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,38 @@
+.outer-detail-content-component {
+  background: #ffffff;
+  padding: 25px;
+
+  .title {
+    color: #383838;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    color: #5b5b5b;
+    font-size: 12px;
+    line-height: 18px;
+    max-height: 250px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .content-expanded {
+    height: auto;
+    max-height: none;
+  }
+
+  .button-area {
+    .button {
+      color: #5b5b5b;
+      font-size: 12px;
+      margin-left: 50%;
+      transform: translate(-40px);
+
+      &:hover {
+        border-color: #d9d9d9;
+      }
+    }
+  }
+}

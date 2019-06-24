@@ -1,0 +1,28 @@
+.finance-report-form-component {
+
+  .finance-form-container {
+    border-radius: 7px;
+    background: #ffffff;
+
+    .company-name {
+      padding: 25px;
+      font-size: 24px;
+      font-weight: 600;
+      color: #383838;
+      border-bottom: 1px solid #f3f3f3;
+    }
+
+    .form-switch-container {
+      position: relative;
+      // padding-top: 25px;
+
+      .form-header-tip {
+        position: relative;
+        top: 15px;
+        right: 25px;
+        font-size: 12px;
+        color: #5b5b5b;
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.search-result-item-component {
+  padding: 25px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f6f6f6;
+  }
+
+  .left-area {
+    display: inline-block;
+    vertical-align: top;
+    width: 98px;
+    height: 98px;
+    margin-right: 12px;
+    background: url(./images/company-icon.png);
+    background-size: 100%;
+  }
+
+  .right-area {
+    display: inline-block;
+    vertical-align: top;
+
+    .company-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #383838;
+
+      &:hover {
+        color: #d24545;
+      }
+    }
+
+    .company-code {
+      font-size: 14px;
+      font-weight: 600;
+      color: #383838;
+
+      &:hover {
+        color: #d24545;
+      }
+
+      margin-top: 5px;
+    }
+
+    .description-area {
+      margin-top: 10px;
+      width: 675px;
+      max-width: 675px;
+
+      .left-description-area {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 120px;
+      }
+
+      .right-description-area {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .bottom-description-area {
+        display: block;
+        line-height: 18px;
+        word-wrap: break-word;
+        text-overflow:ellipsis;
+        overflow: hidden;
+        white-space: normal;
+        text-align: justify;
+      }
+
+      .left-description-area,
+      .right-description-area,
+      .bottom-description-area {
+        .description {
+          font-size: 12px;
+          color: #5b5b5b;
+          margin-bottom: 6px;
+        }
+      }
+    }
+
+    .tags-area {
+      margin-top: 5px;
+
+      .tag {
+        display: inline-block;
+        font-size: 12px;
+        color: #ffffff;
+        background: #d24545;
+        padding: 5px 8px;
+        border-radius: 5px;
+        margin-right: 6px;
+      }
+    }
+  }
+}

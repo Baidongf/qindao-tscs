@@ -1,0 +1,201 @@
+.schedule-createOrEdit-component {
+  .form-wrap {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 5px 15px 0px rgba(230, 230, 230, 0.24);
+    border-radius: 7px;
+
+    .form {
+      .form-content {
+        padding: 25px;
+
+        .form-title {
+          font-size: 18px;
+          font-weight: 600;
+          color: rgb(56, 56, 56);
+        }
+
+        .period-select {
+          position: absolute;
+          left:327px;
+          top: 5px;
+          width: 195px;
+        }
+
+        .remind-time-select {
+          position: absolute;
+          left: 545px;
+          top: 5px;
+        }
+      }
+    }
+  }
+
+  .add-wrap {
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin-top: 16px;
+    padding: 0 25px;
+
+    .title {
+      height: 62px;
+      line-height: 62px;
+      border-bottom: 1px solid #F3F3F3;
+
+      .label {
+        float: left;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(56, 56, 56);
+      }
+
+      .btn {
+        float: right;
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 5px;
+        border: 1px solid rgba(210, 69, 69, 1);
+        font-size: 12px;
+        font-weight: 400;
+        color: rgb(210, 69, 69);
+        position: relative;
+        top: 16px;
+        cursor: pointer;
+      }
+    }
+
+    .content {
+      .content-header {
+        font-size: 0;
+
+        div {
+          display: inline-block;
+          width: 20%;
+          height: 40px;
+          line-height: 40px;
+
+          font-size: 14px;
+          font-weight: 500;
+          color: rgb(56, 56, 56);
+        }
+      }
+
+      .list {
+        font-size: 0;
+        padding-bottom: 10px;
+
+        .item {
+          .operation {
+            position: relative;
+            top: 10px;
+
+            div {
+              cursor: pointer;
+              width: 20px;
+              height: 20px;
+              background: url("./image/delete-black.png");
+              background-size: cover;
+
+              &:hover {
+                background: url("./image/delete-red.png");
+                background-size: cover;
+              }
+            }
+          }
+
+          & > div {
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            width: 20%;
+
+            font-size: 12px;
+            font-weight: 400;
+            color: rgb(91, 91, 91);
+
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+
+  .add-opportunity {
+    .content-header {
+      & > div {
+        &:nth-child(1) {
+          width: 284px;
+        }
+
+        &:nth-child(2) {
+          width: 260px;
+        }
+
+        &:nth-child(3) {
+          width: 148px;
+        }
+
+        &:nth-child(4) {
+          width: 143px;
+        }
+
+        &:nth-child(5) {
+          width: 118px;
+        }
+
+        &:nth-child(6) {
+          width: auto;
+        }
+      }
+    }
+
+    .list {
+
+      .item {
+        & > div {
+          &:nth-child(1) {
+            width: 284px;
+          }
+
+          &:nth-child(2) {
+            width: 260px;
+          }
+
+          &:nth-child(3) {
+            width: 148px;
+          }
+
+          &:nth-child(4) {
+            width: 143px;
+          }
+
+          &:nth-child(5) {
+            width: 118px;
+          }
+
+          &:nth-child(6) {
+            width: auto;
+          }
+        }
+
+      }
+    }
+  }
+
+  .btn-wrap {
+    margin-top: 16px;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 7px;
+    .btns-area{
+      float: right;
+      .btn-cancel{
+        margin-right: 16px;
+      }
+    }
+  }
+
+}

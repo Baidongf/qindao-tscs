@@ -1,0 +1,97 @@
+.activity-detail-content-component {
+  background: #ffffff;
+  padding-top: 25px;
+  padding-bottom: 80px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+
+  .title {
+    color: #383838;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+
+  .detail-row {
+
+    .row-title {
+      display: inline-block;
+      padding: 14px 50px 14px 25px;
+      color: #383838;
+      font-size: 14px;
+      width: 200px;
+      text-align: right;
+      vertical-align: top;
+    }
+
+    .row-content {
+      display: inline-block;
+      border-left: 1px solid #f3f3f3;
+      padding: 14px 22px;
+      font-size: 12px;
+      color: #5b5b5b;
+      vertical-align: top;
+      text-align: justify;
+      line-height: 18px;
+
+      max-width: 900px;
+    }
+
+    &:nth-child(even) {
+      background-color: #fafafa;
+    }
+  }
+
+  .attachments-container {
+    margin-top: 25px;
+
+    .attachments-title {
+      display: inline-block;
+      padding: 14px 50px 14px 25px;
+      color: #383838;
+      font-size: 14px;
+      width: 200px;
+      text-align: right;
+      vertical-align: top;
+    }
+
+    .attachments-content {
+      display: inline-block;
+      width: 900px;
+      vertical-align: top;
+
+      .attachments {
+        position: relative;
+        padding: 14px 15px;
+        background-color: #fafafa;
+        color: #5b5b5b;
+        font-size: 12px;
+
+        .file-title {
+          .attachment-icon {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: url(./images/attachment-icon.png);
+            background-size: 100%;
+            vertical-align: middle;
+          }
+
+          .wording {
+            display: inline-block;
+            margin-left: 3px;
+            vertical-align: middle;
+          }
+        }
+
+        .download-button {
+          position: absolute;
+          right: 30px;;
+        }
+      }
+    }
+
+  }
+
+}

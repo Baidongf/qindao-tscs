@@ -1,0 +1,136 @@
+.create-marketing-list-component {
+  background-color: #f0f0f0;
+  .filter-area {
+    background: #fff;
+    padding: 0 25px 20px 25px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    .inputs {
+      .input-item {
+        margin-right: 15px;
+      }
+    }
+
+    .buttons {
+      display: inline-block;
+
+      .btn-item {
+        margin-right: 15px;
+
+        &.reset-btn {
+          cursor: pointer;
+          color: #b3b3b3;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+    }
+    .btn-export{
+      margin-right: 20px;
+    }
+  }
+
+  .result-area {
+    background: #fff;
+    padding: 0 25px 25px 25px;
+    margin-top: 14px;
+    border-radius: 7px;
+
+    .list-header {
+      position: relative;
+      padding: 25px 0 25px 0;
+      font-size: 12px;
+
+      .total-area {
+        .total-num {
+          margin: 0 2px;
+          color: #D24545;
+        }
+      }
+
+      .btns {
+        position: absolute;
+        top: 18px;
+        right: 0;
+
+        .btn-create {
+          //border-color: #d24545;
+          color: #fff;
+        }
+      }
+
+    }
+
+    .table-area {
+
+      .operation-area {
+        .btn-item {
+          margin-right: 20px;
+          color: #1890ff;
+          cursor: pointer;
+        }
+      }
+
+      .td-name {
+        width: 120px;
+      }
+      .list-detail{
+        margin-top: 10px;
+      }
+      .listing-detail{
+        float: left;
+        height: 24px;
+        line-height: 24px;
+        padding: 1px 4px;
+        text-align: center;
+        font-weight: 400;
+        color: #5B5B5B;
+
+        font-size: 12px;
+        background:rgba(242,242,242,1);
+        border-radius: 5px;
+        margin-right: 8px;
+        &.one{
+          color: #5B5B5B;
+          background:rgba(242,242,242,1);
+        }
+        &.two{
+          color: #50BC4E;
+          background:rgba(80,188,78,0.1);
+        }
+      }
+      .associated_schedule{
+        display: inline-block;
+        border: 1px solid #d24545;
+        width: 80px;
+        height: 24px;
+        margin-top: 7px;
+        border-radius: 24px;
+        text-align: center;
+        line-height: 24px;
+        color: #d24545;
+        font-size: 12px;
+
+        &:hover {
+          color: #fff;
+          background: #D24545;
+        }
+      }
+
+    }
+
+    .footer {}
+  }
+
+  .sub-table {
+    .ant-table-body {
+      table {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

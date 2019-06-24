@@ -1,0 +1,36 @@
+.opportunity-related-schedule-component {
+  background: #ffffff;
+  border-radius: 7px;
+  margin-top: 15px;
+  padding-bottom: 10px;
+
+  .title {
+    position: relative;
+    border-bottom: 1px solid #fafafa;
+    padding: 25px 25px 25px 43px;
+    font-size: 14px;
+    color: #383838;
+    font-weight: 600;
+
+    .schedule-icon {
+      position: absolute;
+      left: 25px;
+      top: 50%;
+      margin-top: -8px;
+
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: url(./images/schedule-icon.png);
+      background-size: 100%;
+    }
+  }
+
+  .content {
+
+    .first-column {
+      padding-left: 25px;
+    }
+  }
+
+}

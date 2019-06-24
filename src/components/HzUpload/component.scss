@@ -1,0 +1,13 @@
+.HzUpload{
+  font-size: 12px;
+  .HzUpload-hidden-input[type="file"]{
+    display: none
+  }
+  .ant-btn{
+    font-size: 12px;
+  }
+  .HzUpload-fileName{
+    display: inline-block;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,152 @@
+.user-list-component {
+
+  background-color: #f0f0f0;
+
+  .filter-area {
+    background: #ffffff;
+    height: 72px;
+    line-height: 72px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    .inputs {
+      float: left;
+
+      .input-item {
+        margin-right: 8px;
+      }
+
+      .own-institution {
+        display: inline-block;
+        margin-right: 10px;
+        width: 240px;
+      }
+    }
+
+    .buttons {
+      float: right;
+      margin-right: 8px;
+
+      .btn-item {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .result-area {
+    padding-top: 25px;
+    background: #ffffff;
+    border-radius: 7px;
+
+    .list-header {
+      position: relative;
+      margin: 0 0 25px 25px;
+      font-size: 12px;
+
+      .total-area {
+
+        .total-num {
+          margin: 0 2px;
+          color: #D24545;
+        }
+      }
+
+      .btns {
+        position: absolute;
+        top: -5px;
+        right: 25px;
+
+        .btn-create {
+          font-size: 12px;
+          border-color: #D24545;
+          color: #D24545;
+        }
+      }
+
+    }
+
+    .table-area {
+
+      .operation-area {
+        color: #d24545;
+        .btn-item {
+          margin-right: 5px;
+          cursor: pointer;
+          padding: 3px 10px;
+          border: 1px solid #d24545;
+          border-radius: 12px;
+
+          &:hover {
+            background-color: #d24545;
+            color: #ffffff;
+          }
+        }
+
+        .reset-button {
+          cursor: pointer;
+          padding: 3px 10px;
+          border: 1px solid #d24545;
+          border-radius: 12px;
+
+          &:hover {
+            background-color: #d24545;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .td-name {
+        width: 80px;
+        padding-left: 20px;
+      }
+
+      .pagination-container {
+        padding-right: 25px;
+        margin-bottom: 35px;
+      }
+
+      .column {
+        font-size: 12px;
+      }
+
+      .ellipsis {
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+      }
+
+      .column-id {
+        min-width: 70px;
+      }
+
+      .column-code {
+        min-width: 70px;
+      }
+
+      .column-gender {
+        min-width: 45px;
+      }
+
+      .column-institution {
+        min-width: 90px;
+        max-width: 150px;
+      }
+
+      .column-mail {
+        min-width: 80px;
+        max-width: 100px;
+      }
+
+      .column-job {
+        min-width: 70px;
+      }
+
+      .column-status {
+        min-width: 80px;
+      }
+
+    }
+  }
+}

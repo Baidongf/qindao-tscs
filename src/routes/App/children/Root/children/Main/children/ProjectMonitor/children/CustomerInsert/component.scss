@@ -1,0 +1,65 @@
+
+.add-customer-list {
+  .breadcrumb-area {
+
+  }
+
+  .ant-calendar-picker {
+    width: 100%;
+  }
+
+  .main-body {
+    background: #fff;
+    padding-top: 24px;
+    border-radius: 7px;
+  }
+
+  .btns-area {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    .btn-submit{
+      margin-right: 10px;
+    }
+  }
+
+  .upload-file {
+    height: 32px;
+    border-radius: 7px;
+    border: 1px solid rgba(233, 233, 233, 1);
+    line-height: 32px;
+    cursor: pointer;
+    padding: 0 20px;
+
+    .label {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(179, 179, 179, 1);
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .upload-icon {
+      float: right;
+    }
+  }
+
+  .file-format {
+    margin-left: 87px;
+
+    .tips {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(179, 179, 179, 1);
+    }
+
+    .example-format {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 400;
+      color: #f5222d;
+    }
+  }
+}

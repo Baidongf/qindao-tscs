@@ -1,0 +1,22 @@
+.credit_info_header{
+  display: flex;
+  margin: 30px 0 10px 0;
+  .credit_info_circle{
+    margin-right: 15px;
+  }
+  .credit_info_header_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    line-height: 2;
+    >p{
+      font-size: 12px;
+      color: #42444C;
+      font-weight: bold;
+      .header_count_right {
+       color: #4FA2F1;
+      }
+    }
+  }
+}

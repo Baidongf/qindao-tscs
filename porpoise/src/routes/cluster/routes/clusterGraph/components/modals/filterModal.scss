@@ -1,0 +1,197 @@
+.filter-modal {
+  color: #999;
+
+  .rodal-dialog {
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  .modal-header {
+    margin-bottom: 25px;
+    text-align: left;
+    font-weight: bold;
+    font-size:18px;
+    color:rgba(66,68,76,1);
+    &::before{
+      content: '';
+      display: inline-block;
+      background-color: #42444C;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+  }
+  .rodal-close{
+    top: 24px;
+    right: 24px;
+    &::before, &::after{
+      background: #C3CACF;
+      border-radius: 0;
+      top: 0;
+      left: auto;
+    }
+  }
+  .filter-title {
+    color: #42444C;
+    margin-right: 30px;
+    margin-top: 5px;
+    width: 94px;
+    text-align: right;
+  }
+  .modal-body {
+    font-size: 14px;
+    text-align: left;
+    padding: 0 16px;
+    max-height: 382px;
+    overflow: auto;
+
+    .filter-option,
+    .filter-option-list {
+      overflow: hidden;
+      &.single-line {
+        max-height: 26px;
+        margin-bottom: 20px;
+      }
+    }
+    .filter-option-list {
+      max-width: 520px;
+    }
+    .filter-title,
+    .filter-option-item {
+      float: left;
+      font-size: 14px;
+    }
+    .filter-option {
+      // margin-top: 25px;
+      position: relative;
+      // display: flex;
+      // align-items: center;
+    }
+    .filter-option-item {
+      color: #5B5B5B;
+      margin: 0 16px 20px 0;
+      padding: 5px 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover, &.active {
+        color: #fff;
+        background: #4FA2F1;
+      }
+    }
+    .expand-btn {
+      position: absolute;
+      font-size: 14px;
+      right: 0;
+      top: 5px;
+      color: #b3b3b3;
+      padding: 0 9px;
+      background-size: 8px 5px;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    .up-btn-icon{
+      background-image: url('../assets/up-btn-icon.svg');
+
+    }
+    .down-btn-icon{
+      background-image: url('../assets/down-btn-icon.svg');
+    }
+
+    .filter-input-option {
+      .filter-title {
+        margin-top: 6px;
+      }
+      .filter-input-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .filter-input-box {
+          position: relative;
+          .filter-unit {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 25px;
+          }
+        }
+      }
+      .filter-input {
+        padding: 0 10px;
+        width: 290px;
+        height: 30px;
+        border-radius: 7px;
+        border: 1px solid #E9E9E9;
+        color: #5B5B5B;
+        font-size: 12px;
+        box-sizing: border-box;
+
+        -moz-appearance:textfield;/* firefox */
+        &::placeholder, &:focus::placeholder {
+          color: #E9E9E9;
+          background-color: #F6F6F6;
+          border-color: #F6F6F6;
+        }
+        &:focus, &:active{
+          border-color: #F6F6F6;
+          background-color: #F6F6F6;
+        }
+        // &::-webkit-outer-spin-button,
+        // &::-webkit-inner-spin-button{
+        //   -webkit-appearance: none !important; /* chrome */
+        // }
+      }
+      .horizontal-line {
+        margin: 0 4px;
+      }
+
+      .ok-btn {
+        margin-left: 10px;
+        color: #4FA2F1;
+        &.invalid {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .filter-option-sub-list {
+      margin: 0 0 30px 126px;
+      padding: 13px;
+      background: #F6F6F6;
+      display: -ms-flexbox;
+      display: flex;
+      border-radius: 5px;
+      span.filter-option-item{
+        flex-shrink: 0;
+        height: 31px;
+        box-sizing: border-box;
+      }
+      .filter-option-item {
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
+    }
+  }
+  .no-use-line{
+    margin-bottom: 25px;
+    height: 1px;
+    width: 782px;
+    background-color: #F3F3F3;
+  }
+  .rodal .modal-btns .btn {
+    box-sizing: border-box;
+    width:120px;
+    height:36px;
+    background:rgba(195,202,207,1);
+    border-radius:5px;
+    margin-left: 16px;
+    font-size:14px;
+    color:#fff;
+  }
+
+  .rodal  .modal-btns .ok-btn {
+    background:rgba(79,162,241,1);
+    box-shadow:0px 5px 13px 0px rgba(79,162,241,0.45);
+  }
+}

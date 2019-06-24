@@ -1,0 +1,123 @@
+.merge-relation {
+    .card-body .table {
+        border-spacing: 0;
+        display: table;
+        border-color: grey;
+        border-collapse: collapse;
+        overflow: hidden;
+
+        .th, .td {
+            padding: 10px 4px;
+            display: table-cell;
+        }
+        .tr {
+            position: relative;
+        }
+        .td {
+            border: 1px solid $filter-border-color;
+            border-top: 0;
+            vertical-align: inherit;
+            .name, .label, .operation, .target {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .name, .label, .target {
+                cursor: pointer;
+                &-hover {
+                    display: none;
+                }
+                &:hover + .name-hover,
+                &:hover + .label-hover,
+                &:hover + .target-hover {
+                    display: block;
+                    position: fixed;
+                    line-height: 12px;
+                    z-index: 1;
+                    padding: 8px;
+                    border: 1px solid #F8F8F8;
+                    background-color: #fff;
+                    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2), 0 0 16px 0 rgba(0, 0, 0, .15);
+                }
+            }
+        }
+        .tbody .tr:last-child .td {
+            .name, .label {
+                &:hover + .name-hover,
+                &:hover + .label-hover {
+                    margin-top: -50px;
+                }
+            }
+        }
+
+        .name, .label, .target {
+            text-align: left;
+        }
+        .operation, .detail {
+            text-align: center;
+        }
+        .name {
+            width: 96px;
+        }
+        .label, .target {
+            width: 116px;
+        }
+        .detail {
+            width: 50px;
+        }
+        .operation {
+            width: 72px;
+        }
+        .operation, .detail, .name {
+            a {
+                cursor: pointer;
+                color: $primary-blue;
+
+                &.invalid {
+                    color: $primary-black;
+                }
+            }
+        }
+        &.guarantee, &.money_flow, &.in_party_bid, &.out_party_bid, &.out_sue_relate, &.in_sue_relate, &.plaintiff_relate, &.defendant_relate {
+            .label {
+                width: 56px;
+            }
+        }
+        &.out_actual_controller, &.out_control_shareholder {
+            .name {
+                width: 218px;
+            }
+        }
+
+        .thead {
+            display: table;
+            padding-right: 16px;
+            table-layout: fixed;
+            color: $primary-lighter-black;
+            vertical-align: middle;
+            border-color: inherit;
+            padding-right: 16px;
+            .th {
+                border: 1px solid $filter-border-color;
+                vertical-align: inherit;
+                font-weight: bold;
+            }
+        }
+
+        .tbody {
+            display: block;
+            height: 256px;
+            overflow: auto;
+            padding-right: 16px;
+            border-color: inherit;
+
+            .tr {
+                display: table-row;
+                table-layout: fixed;
+                vertical-align: inherit;
+                border-color: inherit;
+                position: relative;
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+@import '../../../styles/_variables.scss';
+
+.card.guarantee-risk {
+    width: 340px;
+    background-color: transparent;
+    box-shadow: none;
+
+    .fold-card-icon {
+        display: none;
+    }
+
+    .card-header {
+        height: 40px;
+        padding: 0;
+        margin-bottom: 8px;
+        background-color: $white;
+        box-shadow: 0 1px 7px 0 rgba(0,0,0,.29);
+
+        .name {
+            margin: 0 0 0 16px;
+            line-height: 40px;
+            font-size: $font-M;
+            font-weight: normal;
+            color: $primary-gray;
+            .cluster, .guarantee {
+                cursor: pointer;
+                &:hover {
+                    color: darken($primary-gray, 5);
+                }
+                & a:visited {
+                    color: $primary-gray;
+                }
+            }
+            .active, .active:hover {
+                color: $primary-blue;
+            }
+        }
+
+        .triangle-wrapper {
+            margin: 14px 25px 0 0;
+            cursor: pointer;
+        }
+    }
+
+    .card-body {
+        background-color: #fff;
+        box-shadow: 0 1px 7px 0 rgba(0,0,0,.29);
+        padding: 16px 5px 16px 16px;
+
+        .search-input {
+            width: 250px;
+            height: 30px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 46px 0 10px;
+            margin: 0 0 10px;
+        }
+        .search-delete-button, .search-button {
+            top: 5px;
+            right: 4px;
+        }
+        .search-delete-button {
+            right: 24px;
+        }
+        .search-suggested-ul {
+            width: 310px;
+            top: 35px;
+            z-index: 1;
+        }
+        .description-list {
+            max-height: 204px;
+        }
+
+        .section-title {
+            background-color: #d3d3d3;
+            color: #475461;
+            line-height: 30px;
+            height: 30px;
+            padding-left: 10px;
+            font-size: 14px;
+        }
+
+        .guarantee-data {
+            max-height: 500px;
+            overflow: auto;
+            padding-right: 10px;
+            .btn-wrapper {
+                margin: 0 0 5px;
+            }
+            .btn-clear {
+                margin-right: 5px;
+                border: 1px solid #d9d9d9;
+                display: inline-block;
+                width: 30px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                border-radius: 2px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #ececec;
+                }
+            }
+            .guarantee-type-title {
+                position: relative;
+                background-color: #d3d3d3;
+                line-height: 25px;
+                margin: 5px 0;
+                padding-left: 5px;
+                cursor: pointer;
+                user-select: none;
+                .triangle-wrapper {
+                    position: absolute;
+                    right: 17px;
+                    top: 6px;
+                }
+            }
+        }
+    }
+
+    .total-count {
+        margin-bottom: 10px;
+        .total-count-title {
+            font-size: 14px;
+        }
+        .total-count-list li {
+            list-style: none;
+            font-size: 12px;
+            line-height: 1.4em;
+        }
+    }
+
+    .card-body .cluster-list {
+        .checked-cluster-item ol li {
+            cursor: pointer;
+            font-size: 12px;
+            color: #757F89;
+            &.highlight-name {
+                color: #008cff;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .cluster-item .custom-checkbox {
+            max-width: 280px;
+            line-height: 20px;
+        }
+
+        .cluster-item-ol {
+            list-style: none;
+            padding-left: 30px;
+            li {
+                margin-top: 6px;
+                &:last-child {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    .triangle-wrapper {
+        position: relative;
+        float: right;
+        cursor: pointer;
+        .triangle {
+            position: absolute;
+            margin-top: 5px;
+        }
+        .triangle-up {
+            margin-top: 1px;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}

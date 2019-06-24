@@ -1,0 +1,37 @@
+.recent-component {
+  position: relative;
+  padding: 0 21px 0 110px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+
+  .title {
+    // float: left;
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+    .eye-icon {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  .content {
+    width: 480px;
+    max-width: 480px;
+
+    .item {
+      display: inline-block;
+      min-width: 135px;
+      max-width: 135px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin: 1px 20px 7px 0;
+
+      &.history-item {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.detail-header-component {
+  background: #ffffff;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 1px solid #f3f3f3;
+  padding: 25px;
+
+  .detail-title {
+    color: #383838;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .tags-container {
+    position: relative;
+    .tag {
+      display: inline-block;
+      padding: 5px 8px;
+      border-radius: 5px;
+      margin-right: 10px;
+      font-size: 12px;
+
+      &.bank-type {
+        background-color: #d24545;
+        color: #ffffff;
+      }
+
+      &.dynamic-type {
+        background-color: #3c81d2;
+        color: #ffffff;
+      }
+
+      &.institution {
+        background-color: #f2f2f2;
+        color: #5b5b5b;
+      }
+
+      &.managers {
+        background-color: #f2f2f2;
+        color: #5b5b5b;
+      }
+
+      &.date {
+        position: absolute;
+        right: 0;
+        padding-right: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}

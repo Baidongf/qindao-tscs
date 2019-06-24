@@ -1,0 +1,61 @@
+.finance-info-component {
+
+  .filter-header {
+    position: relative;
+    border: none;
+    text-align: start;
+    padding: 25px 0 10px 25px;
+    font-size: 12px;
+
+    .color-red {
+      color: #d24545;
+    }
+
+    .filter-select {
+      display: inline-block;
+      position: absolute;
+
+      .ant-select {
+        width: 120px;
+      }
+
+      &.year-select {
+        top: 10px;
+        right: 155px;
+      }
+
+      &.period-select {
+        top: 10px;
+        right: 25px;
+      }
+    }
+  }
+
+  .finance-detail-button {
+    padding: 6px 16px;
+    border: 1px solid #d24545;
+    border-radius: 16px;
+    color: #d24545;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover {
+      background: #d24545;
+      color: #ffffff;
+    }
+  }
+
+  .ant-table-wrapper {
+    .ant-table-thead {
+      th {
+        border-top: none;
+      }
+
+      .first-column {
+        // padding-left: 25px;
+      }
+    }
+  }
+}
+
+

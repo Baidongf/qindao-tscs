@@ -1,0 +1,1 @@
+export function getTypeById (id ) { return id.split('/')[0]}

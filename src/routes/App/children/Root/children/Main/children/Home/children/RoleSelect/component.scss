@@ -1,0 +1,133 @@
+.role-select-component {
+  position: relative;
+}
+
+.ant-modal-header {
+  padding: 35px;
+  .ant-modal-title {
+    font-size: 26px;
+  }
+}
+
+.ant-modal-body {
+  position: relative;
+
+  .select-area {
+    position: relative;
+    text-align: center;
+
+    &.more-than-two {
+      // 角色数量大于两个时的排列
+      text-align: left;
+      .select-center-area {
+        .select-block {
+          &:nth-child(3n-1) {
+            margin-left: 0;
+            margin-right: 0;
+          }
+
+          &:nth-child(3n+1) {
+            margin-left: 0;
+          }
+
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .select-center-area {
+      display: inline-block;
+      max-width: 738px;
+
+      .select-block {
+        display: inline-block;
+        width: 200px;
+        height: 40px;
+        margin: 30px 68px 0 68px;
+        border: 1px solid #e9e9e9;
+        border-radius: 7px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          color: #ffffff;
+          background-color: #d24545;
+          box-shadow:0px 5px 16px 0px rgba(210,69,69,0.6);
+          border-color: #d24545;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .select-pic {
+          height: 170px;
+        }
+
+        .role-title {
+          margin-top: 10px;
+          color: #383838;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+
+      .bank-president {
+        .select-pic {
+          background: url(./images/bank-president.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+
+        &:hover {
+          .select-pic {
+            background: url(./images/bank-president-active.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+
+      .department-manager {
+        .select-pic {
+          background: url(./images/department-manager.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+
+        &:hover {
+          .select-pic {
+            background: url(./images/department-manager-active.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+
+      .customer-manager {
+        .select-pic {
+          background: url(./images/customer-manager.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+
+        &:hover {
+          .select-pic {
+            background: url(./images/customer-manager-active.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,26 @@
+
+// 您的位置、链接、分隔开公用颜色
+$common-color: #757575;
+
+.hzBreadcrumb-component {
+  margin: 67px 0 12px 0;
+  font-size: 12px;
+  color: $common-color;
+  .ant-breadcrumb {
+    display: inline-block;
+    .ant-breadcrumb-link {
+      color: $common-color;
+      font-size: 12px;
+      a {
+        color: $common-color;
+      }
+      span {
+        color: #5F5F5F;
+      }
+    }
+    .ant-breadcrumb-separator {
+      color: $common-color;
+    }
+
+  }
+}

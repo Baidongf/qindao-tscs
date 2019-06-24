@@ -1,0 +1,8 @@
+.DS_STORE
+*.log
+src/config_o.js
+node_modules
+dist
+coverage
+
+.idea/

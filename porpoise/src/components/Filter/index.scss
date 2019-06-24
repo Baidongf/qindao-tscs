@@ -1,0 +1,9 @@
+@import 'FilterNav';
+@import 'FilterPanel';
+
+.filter-wrap {
+    position: absolute;
+    right: 0;
+    margin-top: $header-height;
+    z-index: 2;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="33px" viewBox="0 0 24 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(-395.000000, -399.000000)">
+            <g id="Group-6" transform="translate(395.000000, 399.000000)">
+                <path d="M7,0 L24,0 L24,33 L7,33 C3.13400675,33 4.73447626e-16,29.8659932 0,26 L0,7 C-4.73447626e-16,3.13400675 3.13400675,3.3747067e-15 7,2.66453526e-15 Z" id="Rectangle-11" fill="#F6F6F6"></path>
+                <path d="M17.183222,14.3896666 L12.7308821,19.2584532 C12.5978518,19.4098467 12.4060226,19.4966102 12.2045462,19.4966102 C12.0030698,19.4966102 11.8113016,19.4099077 11.6782255,19.2584532 L7.22587034,14.3896666 C7.00847305,14.1601035 6.94132442,13.8254747 7.05367129,13.5299689 C7.16600289,13.2344478 7.43713129,13.0280867 7.75219099,13 L16.6532073,13 C16.9695187,13.0268961 17.2418377,13.2320054 17.3541693,13.5287782 C17.4677679,13.8254747 17.4005582,14.1589129 17.183222,14.3896666 Z" id="Fill-1-Copy-7" fill="#C3CACF" transform="translate(12.204345, 16.248305) rotate(90.000000) translate(-12.204345, -16.248305) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

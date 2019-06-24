@@ -1,0 +1,108 @@
+.relation-card {
+    // 找关系头部
+    .card-header {
+        padding: 16px 16px 12px;
+        .card-title {
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+    .back {
+        float: left;
+        width: 16px;
+        height: 16px;
+        background: url("../components/Card/assets/back.svg") no-repeat center;
+    }
+
+    .company-detail-title {
+        float: left;
+        margin: 0 16px;
+        font-weight: normal;
+        font-size: $font-L;
+    }
+
+    .switch-tab {
+        margin: 26px auto 0;
+        width: 180px;
+        font-size: $font-L;
+        text-align: center;
+
+        span {
+            cursor: pointer;
+            & + span {
+                float: right;
+            }
+        }
+        .inactive {
+            opacity: 0.6;
+        }
+    }
+
+    // 找关系 body
+    .card-body {
+        padding: 26px 24px 24px 28px;
+        font-size: $font-M;
+
+        .trace-depth {
+            margin-bottom: 40px;
+            color: $primary-gray;
+
+            label {
+                margin-right: 8px;
+            }
+
+            > span {
+                margin-left: 8px;
+                color: $primary-lighter-black;
+            }
+        }
+
+        .search-btn, .clear-btn {
+            float: right;
+            width: 88px;
+            height: 32px;
+            cursor: pointer;
+            line-height: 32px;
+            text-align: center;
+        }
+        .search-btn {
+            margin-left: 8px;
+            //background-color: $primary-blue;
+            background-color: #008cff;
+            color: $white;
+            &:hover {
+                //background-color: $primary-lighter-blue;
+                background-color: #e8535c;
+            }
+            &.invalid-btn {
+                background-color: $primary-lighter-black;
+                cursor: not-allowed;
+            }
+        }
+        .clear-btn {
+            color: $primary-lighter-black;
+            &:hover {
+                color: $primary-black;
+            }
+        }
+    }
+
+    .flag-icon,
+    .circle-icon {
+        position: relative;
+    }
+    .flag-icon:before,
+    .circle-icon:before {
+        position: absolute;
+        top: -24px;
+        left: 12px;
+        content: '';
+        width: 0;
+        height: 20px;
+        border: 1px dashed #E8E9EB;
+        margin-left: -1px;
+    }
+    .card-input:first-child .flag-icon:before {
+        border: none;
+    }
+}

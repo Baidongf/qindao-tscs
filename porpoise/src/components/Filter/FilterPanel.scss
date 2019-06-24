@@ -1,0 +1,160 @@
+.filter-panel-wrap {
+    margin-top: 8px;
+    width: 464px;
+    background-color: $white;
+    box-shadow: $box-shadow;
+
+    .tab-list {
+        float: left;
+        width: 150px;
+        padding: 16px 0;
+        font-size: $font-M;
+        color: $primary-gray;
+        list-style: none;
+
+        li {
+            padding: 0 16px;
+            line-height: 32px;
+            cursor: pointer;
+            &:hover, &.active {
+                font-weight: bold;
+                color: $primary-black;
+                background-color: $background-color;
+            }
+        }
+    }
+
+    &.关系挖掘 .filter-detail {
+        min-height: 0;
+        &.filter-detail-list {
+            overflow: visible;
+            padding: 16px 0;
+            .custom-checkbox {
+                display: inline-block;
+                padding-left: 18px;
+                width: 130px;
+            }
+        }
+    }
+
+    .filter-detail {
+        max-height: 385px;
+        padding: 16px;
+        min-height: 375px;
+        overflow: auto;
+        border-left: 1px solid $filter-border-color;
+        .checkbox-container{
+          position: relative;
+          &:hover{
+            .checkbox-tips{
+              display: block;
+            }
+          }
+        }
+        .checkbox-tips{
+          position: absolute;
+          display: none;
+          top: 20px;
+          left: 10px;
+          max-width: 293px;
+          padding: 5px;
+          font-size: 13px;
+          line-height: normal;
+          border: none;
+          color: #666666;
+          z-index: 10;
+          background: #fff;
+          box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+          &.active {
+            display: inline-block;
+          }
+        }
+        .filter-detail-content {
+            .input-range {
+                margin-bottom: 9px;
+            }
+        }
+        .filter-detail-title {
+            margin-top: 8px;
+            height: 31px;
+            line-height: 32px;
+            border-bottom: 1px solid $filter-border-color;
+            &:first-child {
+                margin: 0;
+            }
+        }
+
+        .filter-detail-sub-title {
+            margin: 12px 0 4px;
+            color: #757F89;
+            font-size: 12px;
+        }
+
+        .content-items, .sub-content-items {
+            margin: 0 1px;
+            .custom-checkbox {
+                min-width: 92px;
+                padding: 10px 20px 0;
+                color: $primary-gray;
+            }
+        }
+        .sub-content-items .custom-checkbox {
+            padding: 0 20px 0 0;
+            & + .custom-checkbox {
+                padding-left: 40px;
+            }
+        }
+
+        &.filter-detail-list .custom-checkbox {
+            display: block;
+            line-height: 32px;
+            color: $primary-gray;
+        }
+    }
+
+    .filter-detail-one-layer {
+        .filter-detail-sub-title {
+            margin: 8px 0;
+            line-height: 32px;
+            border-bottom: 1px solid $filter-border-color;
+            font-size: $font-M;
+            color: $primary-black;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        .input-range-ok-btn, .input-range-reset-btn {
+            top: 50%;
+            margin-top: -9px;
+        }
+    }
+
+    .operation-area {
+      padding: 10px 16px;
+      border-top: 1px solid $filter-border-color;
+
+      .btn {
+        float: right;
+        line-height: 18px;
+      }
+      .cancel-btn {
+        margin-right: 10px;
+        color: #a3a9b0;
+        &:hover {
+          color: #475461;
+        }
+      }
+      .ok-btn {
+        width: 36px;
+        height: 18px;
+        background: $primary-blue;
+        color: #fff;
+
+        &.invalid {
+          color: rgba(255, 255, 255, 0.96);
+          background-color: rgba(233, 234, 236, 0.96);
+          cursor: not-allowed;
+        }
+      }
+    }
+}

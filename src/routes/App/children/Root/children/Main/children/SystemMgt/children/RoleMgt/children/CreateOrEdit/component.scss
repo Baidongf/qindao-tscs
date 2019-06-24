@@ -1,0 +1,112 @@
+.create-edit-component {
+  // background-color: #ffffff;
+  width: 1100px;
+  height: 662px;
+  margin: 60px auto 0 auto;
+
+  .role-create-edit-container {
+    background: #ffffff;
+    border-radius: 7px;
+
+    .item {
+      display: inline-block;
+      padding: 25px;
+      vertical-align: top;
+    }
+
+    .input-container {
+      width: 38%;
+      height: 100%;
+      border-right: 1px solid #f3f3f3;
+
+      .input-title {
+        font-size: 14px;
+      }
+
+      .title {
+        color: #383838;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .line-input-area {
+        position: relative;
+        margin-top: 50px;
+
+        .span {
+          display: inline-block;
+        }
+
+        .must-fill-icon {
+          position: absolute;
+          top: 12px;
+          left: -8px;
+          color: red;
+        }
+
+        .name-input {
+          display: inline-block;
+          width: 260px;
+          margin-left: 16px;
+        }
+      }
+
+      .select-input-area {
+        margin-top: 20px;
+      }
+
+      .remark-input-area {
+        margin-top: 20px;
+
+        .remark-input {
+          display: inline-block;
+          width: 260px;
+          height: 132px;
+          margin-left: 16px;
+          vertical-align: -105px;
+        }
+      }
+    }
+
+    .tree-select-container {
+      width: 28.7%;
+
+      .color-red {
+        color: #d24545;
+      }
+
+      .tree-title {
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+
+      .tree-container {
+        height: 308px;
+        overflow-y: auto;
+      }
+
+      .search-input {
+        margin-bottom: 40px;
+      }
+    }
+
+    .tree-display-container {
+      width: 33.3%;
+      margin-top: 116px;
+
+      .tree-container {
+        height: 308px;
+        overflow-y: auto;
+      }
+
+      .button-container {
+        margin-top: 70px;
+        text-align: right;
+
+        .btn-submit {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

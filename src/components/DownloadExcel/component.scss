@@ -1,0 +1,14 @@
+.excel-button-component {
+  cursor: pointer;
+
+  .icon {
+    vertical-align: top;
+  }
+
+  .wording {
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: top;
+    color: #d24545;
+  }
+}

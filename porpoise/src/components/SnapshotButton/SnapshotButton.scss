@@ -1,0 +1,14 @@
+.graphtransform-wrap-photo {
+    bottom: 40px;
+    .transform-to-photo {
+        background-color: #fff;
+        background-image: url(./assets/snapshot-normal-icon.png);
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover,&.active{
+            background-color: #f6f7f7;
+            background-image: url(./assets/snapshot-hover-icon.png);
+        }
+    }
+}

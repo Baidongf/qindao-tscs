@@ -1,0 +1,21 @@
+.no-filter-msg {
+  margin-top: 32px;
+  font-size: 12px;
+  color: #767676;
+  text-align: center;
+  .add-filter-btn {
+    color: #5397E9;
+    cursor: pointer;
+  }
+}
+
+.filter-card-btn {
+  cursor: pointer;
+}
+
+.no-filter-btns {
+  opacity: 0.6;
+  button {
+    cursor: not-allowed;
+  }
+}

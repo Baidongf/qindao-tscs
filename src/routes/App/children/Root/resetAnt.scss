@@ -1,0 +1,75 @@
+.container {
+  height: 100%;
+}
+.page-layout-viewport {
+  height: 100%;
+}
+
+.ant-modal-header {
+  background: #249CFF;
+  .ant-modal-title {
+      color: #fff;
+  }
+}
+.ant-modal-close {
+  .ant-modal-close-x {
+    color: #fff
+  }
+}
+.ant-breadcrumb{
+  margin-bottom: 12px;
+}
+
+/* Button START */
+.ant-btn-primary {
+  background-color: #249CFF;
+  border-color: #249CFF;
+}
+.ant-table-fixed, .ant-table-fixed-right, .ant-table{
+  table-layout:fixed;
+  font-size: 12px;
+  tr td{
+    padding: 12px 10px;
+  }
+  tr th {
+    padding: 16px 10px;
+  }
+}
+.ant-table{
+  font-size: 12px;
+}
+
+/* 解决ie兼容性问题 start */
+.ant-cascader-picker-label{
+  display: block;
+  z-index: 10;
+}
+
+.ant-cascader-menu {
+  -ms-overflow-style: scrollbar
+}
+
+/* 解决ie兼容性问题 end */
+
+.ant-btn-primary.disabled, .ant-btn-primary.disabled.active,
+.ant-btn-primary.disabled:active, .ant-btn-primary.disabled:focus,
+.ant-btn-primary.disabled:hover, .ant-btn-primary[disabled],
+.ant-btn-primary[disabled].active, .ant-btn-primary[disabled]:active,
+.ant-btn-primary[disabled]:focus, .ant-btn-primary[disabled]:hover {
+  background-color: #BDBDBD;
+  color: #fff;
+}
+/* Button END */
+/* 非ant样式 start */
+body{
+  background: #F7F7F7;
+  font-size: 12px;
+}
+ul, li, p{
+  padding: 0;
+  margin: 0;
+}
+ul,li{
+  list-style: none;
+}
+/* 非ant样式 end */

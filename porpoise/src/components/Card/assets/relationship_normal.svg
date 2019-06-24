@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 43.2 (39068) - http://www.bohemiancoding.com/sketch -->
+    <title>relationship_normal</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="relationship_normal_Icon" transform="translate(-4.000000, -5.000000)">
+            <g id="relationship_normal" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(-0.000000, -0.000000)">
+                <rect id="Rectangle-6" fill="#008cff" opacity="0" x="-1.77635684e-15" y="0" width="24" height="24"></rect>
+                <path d="M16,7 C16,7 16.5,9.5 15,11 C13.5,12.5 9,16 9,16" id="Line" stroke="#008cff" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M9,8 L9,20 L7,20 L7,8 L5,8 L8,4 L11,8 L9,8 Z" id="Combined-Shape" fill="#008cff"></path>
+                <polygon id="Triangle-3-Copy" fill="#008cff" points="16 4 19 8 13 8"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

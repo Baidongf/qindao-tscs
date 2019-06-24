@@ -1,0 +1,600 @@
+/**
+ * @desc: { 主题样式文件，通过切换 class 更改主题，light 浅色， deep 深色 }
+ * @author: zhengyiqiu
+ * @Create Date: 2018-12-20 09:40:18
+ * @Last Modified by: xieyuzhong
+ * @Last Modified time: 2019-03-08 11:35:41
+ */
+#root {
+
+  // 浅色主题
+  .light {
+    $background-color: #F6F6F6;
+    $primary-red: #FF5251;
+    $font-color: #333;
+    $font-color-highlight: #4FA2F1;
+    $popover-font-color: #C3CACF;
+    $popover-bg-color: #FAFAFA;
+
+    .search-box .search-input {
+      // color: $font-color;
+      // background-color: $background-color;
+    }
+
+    .chart-container {
+      background-color: $background-color;
+    }
+
+    // 悬浮按钮区域
+    .operate-btn {
+      &.forbid {
+        opacity: 0.3;
+      }
+    }
+    .btn-desc-detail-list {
+      // .btn-desc-detail-item:hover {
+      //   color: $font-color-highlight;
+      // }
+
+      // &.not-click .btn-desc-detail-item {
+      //   &:hover {
+      //     color: $popover-font-color;
+      //   }
+      // }
+    }
+  }
+
+  // 深色主题
+  .deep {
+    $background-color: #252A39;
+    $background-color-light: #2B3245;
+    $rc-background-color: #323A4D;
+    $font-color: #fff;
+    $font-color-highlight: #4FA2F1;
+    $font-color-light: #808593;
+    $font-color-detail: #B0B5C4;
+    $contain-color: #2E324D;
+    $primary-blue: #588EE6;
+    $primary-highlight-blue: #1166FE;
+    $primary-grey: #767676;
+    $popover-font-color: #999;
+    $primary-white: #F0F2F3;
+    $filter-background-color: #262D3F;
+    $filter-item-hover-color: #2b3246;
+    $progress-grey-bg: #595E6B;
+    $table-background-color: #2F374A;
+    .scroll-style {
+      &::-webkit-scrollbar-thumb {
+        background-color: #404B64;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: $background-color-light;
+      }
+    }
+
+    .single-company-name{
+      color: $font-color-detail;
+      .single-name{
+        color: $font-color-detail;
+      }
+    }
+
+    // loading 区域
+    .rodal .rodal-dialog,
+    .modal .rodal-dialog,
+    .loading .rodal-dialog {
+      background-color: $rc-background-color;
+      color: $font-color;
+      .loading-icon {
+        i {
+          background-color: $primary-blue;
+        }
+      }
+      .expand-btn, .ok-btn, .cancel-btn{
+        background-color: transparent;
+      }
+      input[type='number'] {
+        background-color: $background-color-light;
+        border: none;
+      }
+      .filter-option-sub-list{
+        background-color: $background-color-light;
+      }
+      .filter-result-container{
+        background-color: transparent;
+        .filter-result-item{
+          border-radius:5px;
+          border:1px solid $font-color-highlight;
+          color: $font-color-highlight;
+          background: transparent;
+        }
+      }
+      .no-use-line {
+        background: $background-color-light;
+      }
+      .modal-btns {
+        .ok-btn {
+          background: $font-color-highlight;
+        }
+        .cancel-btn{
+          color: $font-color;
+          background-color: $font-color-light;
+        }
+      }
+    }
+
+    .rodal .rodal-dialog .cancel-btn{
+      color: #757f89;
+    }
+
+    .filter-modal .rodal .rodal-dialog {
+      .modal-header {
+        color: $font-color;
+        &::before {
+          background: $font-color;
+        }
+      }
+      .filter-title {
+        color: $font-color;
+      }
+      .filter-option-item {
+        color: $font-color-detail;
+        &.active, &:hover {
+          color: $font-color;
+        }
+      }
+    }
+
+    // 悬浮按钮区域
+    .operate-btn-group {
+      background-color: $rc-background-color;
+      .operate-btn-popover-box .btn-desc-detail {
+        background-color: $rc-background-color;
+
+        .btn-desc-title {
+          color: $font-color-highlight;
+        }
+
+        .btn-desc-summary {
+          color: $popover-font-color;
+        }
+      }
+    }
+    .progress {
+      .progress-btn {
+        background-color: $font-color-light;
+        color: $background-color;
+      }
+      .progress-line .progress-outer .progress-inner{
+        background-color: $progress-grey-bg;
+        .progress-bg {
+          background: $font-color-light;
+          .circle {
+            background-color: $font-color-light;
+          }
+        }
+      }
+    }
+    .label-container {
+      background-color: $rc-background-color;
+    }
+
+    // 头部区域
+    .header {
+      background-color: $rc-background-color;
+    }
+
+    .search-box {
+      .search-input {
+        background-color: $background-color-light;
+        border: none;
+        color: $font-color-light;
+
+        &:focus {
+          color: $font-color-light;
+          border: 1px solid #4a4f5f;
+        }
+        &:focus::placeholder {
+          color: $font-color-light;;
+        }
+        &::placeholder {
+          color: $font-color-light;;
+        }
+      }
+
+      .search-suggested-ul {
+        border: none;
+        background-color: $background-color-light;
+
+        .search-suggested-li {
+          color: $primary-grey;
+
+          &:hover,
+          &.active {
+            color: $font-color;
+            background-color: $contain-color;
+          }
+        }
+      }
+    }
+
+    // 图谱区域
+    .chart-container {
+      background-color: $background-color;
+    }
+
+    .single-company-container .single-company-graph {
+      // 单一视角
+      background-color: $background-color;
+
+      .root-node {
+        fill: $primary-highlight-blue; // 当前视角公司的背景色
+      }
+
+      .label {
+        fill: $primary-blue; // 百分比颜色
+      }
+
+      .label-bg {
+        fill: transparent;
+      }
+
+      .link {
+        stroke: $primary-blue; // 线段颜色
+      }
+    }
+
+    .group-tips-list li.current-insight:before {
+      background-color: $primary-highlight-blue; // 当前视角公司标签的背景色
+    }
+
+    .tips-list li.blacklist:before {
+      background: $primary-grey;
+    }
+
+    // 左侧卡片区域
+    .group-relation-card {
+      background-color: $rc-background-color;
+
+      .card-header {
+        border-bottom-color: $background-color-light;
+        .name {
+          color: $font-color;
+        }
+        .card-icon-pickup{
+          background: url('../routes/cluster/routes/clusterGraph/components/assets/icon_pickup_deep.svg') no-repeat;
+        }
+      }
+
+      .card-body .tab-box {
+        .tab-title {
+          border: none;
+
+          li {
+            color: $primary-grey;
+
+            em {
+              color: $rc-background-color;
+              background-color: $font-color-light;
+            }
+
+            &.active,
+            &:hover {
+              color: $font-color-highlight;
+              em {
+                background-color: $font-color-highlight;
+                color: $rc-background-color;
+              }
+            }
+          }
+        }
+
+        .tab-list {
+          .search-box .search-suggested-ul {
+            border: none;
+            background-color: $background-color-light;
+
+            .search-suggested-li {
+              color: $primary-grey;
+
+              &:hover,
+              &.active {
+                color: $font-color;
+                background-color: $contain-color;
+              }
+            }
+          }
+
+          .sub-nav {
+            border-color: $background-color-light;
+            .nav-item {
+              border-color: rgba(255, 255, 255, 0.1);
+              color: $font-color-light;
+            }
+            .nav-item.active, .nav-item:hover {
+              background-color: $font-color-highlight;
+              border-color: $font-color-highlight;
+              color: $font-color;
+            }
+          }
+        }
+      }
+    }
+
+    .group-relation-card-small {
+      i{
+        background: url('../routes/cluster/routes/clusterGraph/components/assets/icon_pickout_deep.svg') no-repeat;
+      }
+      // background-color: $background-color;
+    }
+
+    .result-list {
+      .result-body .relation-card {
+        border-top-color: $background-color-light;
+
+        &.active .relation-name {
+          color: $font-color-highlight;
+        }
+
+        .relation-name {
+          color: $font-color;
+
+          .name {
+            color: $font-color;
+            &::before{
+              background-color: $font-color;
+            }
+          }
+
+          &:hover {
+            color: $font-color-highlight;
+          }
+
+          .change-sight {
+            border-bottom: none;
+            &:hover {
+              color: $font-color-highlight;
+            }
+          }
+        }
+
+        .relation-info {
+
+          color: $font-color-detail;
+
+          .belong, .position, .boss, .belong>a {
+            color: $font-color-detail;
+          }
+          .belong>i{
+            background-image: url('../routes/cluster/routes/clusterGraph/components/assets/belong_deep.svg')
+          }
+          .position>i{
+            background-image: url('../routes/cluster/routes/clusterGraph/components/assets/position_deep.svg')
+          }
+          .boss>i{
+            background-image: url('../routes/cluster/routes/clusterGraph/components/assets/boss_deep.svg')
+          }
+
+          .info-item {
+            .item {
+              color: $font-color-detail;
+            }
+          }
+        }
+
+        .company-detail {
+          color: $font-color-detail;
+          &>i{
+            background-image: url('../routes/cluster/routes/clusterGraph/components/assets/company_detail_deep.svg')
+          }
+        }
+
+        .arrow-down-icon {
+          background-image: url('../routes/cluster/routes/clusterGraph/components/assets/down-btn-icon-deep.svg')
+        }
+
+        .arrow-up-icon {
+          background-image: url('../routes/cluster/routes/clusterGraph/components/assets/up-btn-icon-deep.svg')
+        }
+
+        .arrow-icon {
+          .arrow-icon-tip {
+            background: #4A526A;
+            color: $font-color;
+            font-weight: lighter;
+          }
+        }
+
+        .relation-company .name {
+          color: $font-color;
+        }
+      }
+
+      .result-table {
+        color: $font-color;
+        background-color: $rc-background-color;
+
+        .risk-table {
+          color: $font-color;
+
+          th div.hide-more:after,
+          td div.hide-more:after {
+            background-color: $contain-color;
+          }
+          tr:hover {
+            background: $table-background-color;
+          }
+        }
+
+        thead {
+          color: $font-color;
+          background-color: $table-background-color;
+        }
+
+        th,
+        td {
+          border-color: $background-color;
+        }
+      }
+
+      .result-header {
+        color: $font-color;
+        >span::before {
+          background-color: $font-color;
+        }
+        .features-label {
+          color: $font-color-detail;
+        }
+      }
+
+      .radio-item {
+        color: $font-color;
+      }
+      .result-item {
+        border-top-color: $background-color-light;
+      }
+      .result-item .pie-wrap .features-center {
+        color: $font-color
+      }
+      .credit_info_header_right>p {
+        color: $font-color-detail;
+      }
+    }
+
+    .rc-pagination .rc-pagination-item,
+    .rc-pagination .rc-pagination-next,
+    .rc-pagination .rc-pagination-prev {
+      background-color: $contain-color;
+      border-color: $background-color;
+
+      a {
+        color: $primary-grey;
+      }
+
+      &:hover a {
+        color: $font-color-highlight;
+      }
+    }
+
+    .rc-pagination .rc-pagination-item-active {
+      a {
+        color: $font-color;
+      }
+    }
+
+    .risk-info-layout {
+      background: $rc-background-color;
+      box-shadow:0px 5px 15px 0px rgba(31,37,51,0.2);
+      .risk-info-header {
+        color: $font-color;
+        background-color: $rc-background-color;
+
+        .title {
+          color: $font-color;
+        }
+      }
+      .risk-info-container {
+        background-color: $rc-background-color;
+        color: $font-color;
+        border-color: $background-color;
+
+        .risk-info-sub-title {
+          color: $font-color;
+        }
+
+        .risk-info-body {
+          .risk-detail, .detail-item {
+            .content, .title {
+              color: $font-color;
+            }
+            .risk-graph .relative-reason {
+              color: $font-color;
+            }
+          }
+        }
+
+        .risk-detail {
+          table {
+            color: $font-color;
+
+            thead {
+              color: $font-color;
+              background-color: $contain-color;
+            }
+
+            th,
+            td {
+              border-color: $background-color;
+            }
+          }
+        }
+      }
+    }
+    .filter-box {
+      box-shadow: none;
+    }
+    .filter-box .filter-body {
+      color: $font-color;
+      .filter-body-tit {
+        color: $font-color;
+      }
+      .filter-body-top {
+        background-color: $background-color-light;
+      }
+      .filter-body-bottom {
+        background: $filter-background-color;
+        .filter-result-item .filter-item-content .item-value {
+          color: $primary-grey;
+          &.selected {
+            color: $primary-white;
+            background-color: $primary-blue;
+          }
+        }
+        .filter-result-item{
+          border-radius:5px;
+          border:1px solid $font-color-highlight;
+          background: transparent;
+          color: $font-color-highlight;
+          &:hover{
+            // color: #666;
+            // background-color: $filter-item-hover-color;
+          }
+        }
+        .filterCard-btn-reset {
+          background-color: $contain-color;
+        }
+        .filter-result-card{
+          background: $filter-background-color;
+        }
+        .filterCard-btn-confirm {
+          color: $primary-white;
+        }
+        .clear-all-filter-btn{
+          background-color: $font-color-light;
+        }
+      }
+    }
+    .btn-desc-detail-theme-item{
+      color: #5b5b5b;
+      &.theme-active,
+      &:hover{
+        color: #b3b3b3;
+      }
+    }
+    .change-sight {
+      background-image: url('../routes/cluster/routes/clusterGraph/components/assets/watch_more_deep.svg');
+    }
+    .i-arrow-down {
+      background-image: url('../routes/cluster/routes/clusterGraph/components/assets/icon_arrow_right_deep.svg');
+    }
+    .relation-company .name::before {
+      background-image: url('../routes/cluster/routes/clusterGraph/components/assets/company_icon_deep.svg');
+    }
+    .relation-total{
+      color: $font-color-detail;
+    }
+    .relation-total::before {
+      background-image: url('../routes/cluster/routes/clusterGraph/components/assets/relation_count_deep.svg');
+    }
+  }
+}

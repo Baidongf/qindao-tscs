@@ -1,0 +1,117 @@
+.knowlMgt-list{
+  .filter-area {
+    background: #ffffff;
+    height: 72px;
+    line-height: 72px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    .inputs {
+      float: left;
+
+      .input-item {
+        margin-right: 8px;
+      }
+    }
+
+    .buttons {
+      float: right;
+      margin-right: 8px;
+
+      .btn-item {
+        margin-right: 8px;
+        &.reset-btn {
+          cursor: pointer;
+          color: #b3b3b3;
+        }
+      }
+    }
+  }
+
+  .result-area {
+    padding-top: 25px;
+    background: #ffffff;
+    border-radius: 7px;
+
+    .list-header {
+      position: relative;
+      margin: 0 0 25px 25px;
+      font-size: 12px;
+
+      .total-area {
+
+        .total-num {
+          margin: 0 2px;
+          color: #D24545;
+        }
+      }
+
+      .btns {
+        position: absolute;
+        top: -5px;
+        right: 25px;
+
+        .btn-create {
+          font-size: 12px;
+          border-color: #D24545;
+          color: #D24545;
+        }
+      }
+
+    }
+
+    .table-area {
+
+      .td-name {
+        padding-left: 25px;
+      }
+
+      .pagination-container {
+        padding-right: 25px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+
+
+  .edit-role-btn {
+    display: inline-block;
+    width: 64px;
+    height: 26px;
+    border: 1px solid #d24545;
+    border-radius: 12px;
+    color: #d24545;
+
+    &:hover {
+      background-color: #d24545;
+      color: #ffffff;
+    }
+  }
+
+  .operation{
+    .btn-item{
+      margin-left: 10px;
+      display: inline-block;
+      height:24px;
+      border-radius:12px;
+      border:1px solid rgb(210,69,69);
+      line-height: 24px;
+      padding: 0 16px;
+      font-size:12px;
+      font-weight:400;
+      color:rgb(210,69,69) !important;
+      cursor: pointer;
+      &:hover{
+        background: rgb(210,69,69);
+        color: #ffffff  !important;
+      }
+    }
+  }
+
+  .star-icon{
+    height: 24px;
+    width: 24px;
+  }
+}

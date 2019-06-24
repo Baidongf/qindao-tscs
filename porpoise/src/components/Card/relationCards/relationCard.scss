@@ -1,0 +1,206 @@
+.money-flow-carid {
+    font-size: 12px;
+    color: #757f89;
+    .card-header {
+        padding: 16px 16px 12px;
+        .card-title {
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+    .back {
+        float: left;
+        width: 16px;
+        height: 16px;
+        background: url("../components/Card/assets/back.svg") no-repeat center;
+    }
+
+    .company-detail-title {
+        float: left;
+        margin: 0 16px;
+        font-weight: normal;
+        font-size: $font-L;
+    }
+
+    .switch-tab {
+        margin: 26px auto 0;
+        width: 180px;
+        font-size: $font-L;
+        text-align: center;
+
+        span {
+            cursor: pointer;
+            & + span {
+                float: right;
+            }
+        }
+        .inactive {
+            opacity: 0.6;
+        }
+    }
+
+    .card-body {
+        padding: 16px;
+        max-height: 420px;
+        overflow: auto;
+        dl {
+            -webkit-margin-before: 0px;
+            -webkit-margin-after: 0px;
+        }
+        .description-list-2 {
+            .double-list-label {
+                float: left;
+                color: #475461;
+                line-height: 20px;
+                text-align: right;
+                width: 52px;
+                font-weight: 300;
+            }
+            .double-list-value {
+                color: #757f89;
+                margin-left: 60px;
+                text-align: justify;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                overflow:hidden;
+                width: 252px;
+                line-height: 20px;
+                font-weight: 300;
+                &.show-all {
+                    white-space: normal;
+                }
+            }
+        }
+        h3 {
+            margin-top: 28px;
+            font-weight: 400;
+        }
+        .count-area {
+            margin: 5px 0;
+            line-height: 20px;
+            .toggle-filter-btn {
+                float: right;
+                height: 20px;
+                padding: 0 10px;
+                border: none;
+                color: #757f89;
+            }
+        }
+        .filter-panel {
+            margin-top: 12px;
+            .input-range .input-range-row {
+                padding-right: 40px;
+                .filter-detail-sub-title {
+                    line-height: 2;
+                }
+            }
+            .operation-btns {
+                margin: 10px 0;
+                text-align: right;
+            }
+            .money-flow-btn {
+                cursor: pointer;
+                font-size: 14px;
+                padding: 6px 12px;
+                color: #fff;
+                border: none;
+                &.ok-btn {
+                    background-color: #008cff;
+                }
+                &.cancle-btn {
+                    color: #757f89;
+                }
+                &:active {
+                    &.cancle-btn {
+                        color: darken($color: #757f89, $amount: 5);
+                    }
+                    &.ok-btn {
+                        background-color: darken($color: #008cff, $amount: 5);
+                    }
+                }
+                &.invalid.ok-btn {
+                    cursor: not-allowed;
+                    background-color: lighten($color: #008cff, $amount: 5);
+                }
+            }
+        }
+        .result-list {
+            padding-right: 40px;
+        }
+        .result-item {
+            margin-bottom: 5px;
+            padding: 5px;
+            border: 1px solid #babfc4;
+            list-style: none;
+            line-height: 1.7;
+            .date {
+                float: right;
+            }
+            .account {
+                dt {
+                    float: left;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+        .error {
+            margin-top: 5px;
+            color: red;
+        }
+    }
+
+    .card-body table {
+        border-spacing: 0;
+        width: 310px;
+        border-collapse: collapse;
+        text-align: center;
+        .odd {
+            background-color: rgba(56, 150, 248, 0.03);
+        }
+        td, th {
+            height: 31px;
+            padding:2px;
+            border: 1px solid $filter-border-color;
+            line-height: 1.2;
+            word-break: break-all;
+        }
+        .show {
+            height: 32px;
+        }
+        .hide {
+            display: none;
+        }
+        .show-detail-btn {
+            color: #008cff;
+            cursor: pointer;
+        }
+    }
+    .pagination-container {
+        float: right;
+        margin: 10px 10px 0 0;
+        .rc-pagination {
+            .rc-pagination-total-text {
+                height: 20px;
+                line-height: 20px;
+            }
+            .rc-pagination-jump-next,
+            .rc-pagination-jump-prev,
+            .rc-pagination-next,
+            .rc-pagination-prev,
+            .rc-pagination-item {
+                border-radius: 2px;
+                height: 18px;
+                min-height: 18px;
+                min-width: 18px;
+                line-height: 18px;
+                &:hover {
+                    border-color: #008cff;
+                }
+                &.rc-pagination-item-active {
+                    background-color: #008cff;
+                    border-color: #008cff;
+                }
+            }
+        }
+    }
+}

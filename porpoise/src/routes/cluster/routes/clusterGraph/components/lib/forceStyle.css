@@ -1,0 +1,41 @@
+svg g.force .node[node-type='company'] .circle,
+svg g.force .node[node-type='Company'] .circle {
+  fill: #60a1f1;
+  stroke: #60a1f1;
+}
+
+svg g.force .node[node-type='company'] .circle-blur,
+svg g.force .node[node-type='Company'] .circle-blur {
+  fill: #60a1f1;
+  stroke: #60a1f1;
+  opacity: 0.5;
+}
+
+svg g.force .node[node-type='person'] .circle,
+svg g.force .node[node-type='Person'] .circle {
+  fill: #98cb6a;
+  stroke: #98cb6a;
+}
+
+svg g.force .node-name {
+  stroke: none;
+  fill: #333;
+  font-size: 10px;
+}
+
+svg g.force .link-name {
+  fill: #333;
+  text-anchor: middle;
+  font-size: 10px;
+}
+
+svg g.force .link {
+  stroke: #e3e3e3;
+  fill: none;
+  font-size: 10px;
+}
+
+svg g.force .link-highlight {
+  stroke: #333;
+  stroke-width: 1.5;
+}

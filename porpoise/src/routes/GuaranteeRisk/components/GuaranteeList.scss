@@ -1,0 +1,20 @@
+.card .guarantee-list {
+  .list-title {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #d3d3d3;
+    color: #475461;
+    font-size: 14px;
+    cursor: pointer;
+
+    .triangle-wrapper {
+      margin-right: 5px;
+      display: inline-block;
+      float: none;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

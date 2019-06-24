@@ -1,0 +1,22 @@
+.customer-manage-home-component {
+  background:rgba(240,240,240,1);
+  .filter-area {
+    background: #fff;
+  }
+  .result-area {
+    background: #fff;
+    margin-top: 16px;
+  }
+
+  .hz-tabs {
+    .shrink-height {
+      .ant-tabs-bar {
+        .ant-tabs-nav-container {
+          .ant-tabs-nav-wrap {
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+}

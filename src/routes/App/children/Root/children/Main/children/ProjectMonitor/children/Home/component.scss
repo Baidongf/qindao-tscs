@@ -1,0 +1,81 @@
+.project-monitor {
+  .over-flow-e{
+    width: 190px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .breadcrumb-area {}
+
+  .filter-area {
+    background: #fff;
+    height: 72px;
+    line-height: 72px;
+    padding: 0 16px;
+    border-radius:7px;
+
+    .inputs {
+      float: left;
+
+      .input-item {
+        margin-right: 8px;
+      }
+    }
+
+    .buttons {
+      float: right;
+      margin-right: 8px;
+
+      .btn-item {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .result-area {
+    background: #fff;
+    padding: 16px;
+    margin-top: 14px;
+    border-radius:7px;
+
+    .list-header {
+      line-height: 49px;
+
+      .total-area {
+        float: left;
+
+        .total-num {
+          margin: 0 2px;
+          color: #D24545;
+        }
+      }
+
+      .btns {
+        float: right;
+
+        .btn-create {
+        }
+      }
+
+    }
+
+    .table-area {
+
+      .operation-area {
+        .btn-item {
+          margin-right: 20px;
+          color: #1890ff;
+          cursor: pointer;
+        }
+      }
+
+      .td-name {
+        width: 120px;
+      }
+    }
+
+    .footer {}
+  }
+  .divstyle{width:100px; height:200px; float:left; border:solid 1px green}
+}

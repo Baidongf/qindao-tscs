@@ -1,0 +1,158 @@
+.error-msg {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 10px;
+  height: 40px;
+}
+
+.error-msg {
+  p {
+    line-height: 40px;
+  }
+  .error-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    content: '';
+    background: url('../components/Hint/assets/error.svg') no-repeat;
+    background-size: contain;
+    background-color: $primary-red;
+    color: $white;
+    border-radius: 16px;
+    vertical-align: sub;
+  }
+}
+
+.loading,
+.error-msg,
+.modal {
+  background-color: $white;
+  color: $primary-gray;
+  font-size: $font-M;
+  text-align: center;
+}
+
+.modal .rodal-dialog,
+.loading .rodal-dialog {
+  padding: 48px 32px;
+  .loading-icon {
+    margin-bottom: 48px;
+    height: 28px;
+    line-height: 28px;
+    i {
+      display: inline-block;
+      margin: 8px 2px;
+      width: 5px;
+      height: 12px;
+      background-color: #bdbdbd;
+      animation-name: loading;
+      animation-iteration-count: infinite;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+      &:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      &:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+      &:nth-child(5) {
+        animation-delay: 0.4s;
+      }
+    }
+  }
+  .modal-msg,
+  .loading-msg {
+    line-height: 2;
+  }
+  .modal-btns {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    text-align: right;
+
+    .btn {
+      margin-left: 20px;
+      padding: 0;
+      color: $primary-gray;
+      font-size: $font-M;
+    }
+    .ok-btn {
+      color: $primary-blue;
+    }
+  }
+}
+@keyframes loading {
+  from {
+    margin: 8px 2px;
+    height: 12px;
+  }
+  ;
+  to {
+    margin: 0px 2px;
+    height: 28px;
+  }
+  ;
+}
+
+.cropCanvas {
+  max-width: 150px;
+  max-height: 150px;
+  overflow: auto;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, .2);
+  float: left;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.uploadImg {
+  padding: 15px 85px;
+  float: right;
+  margin: 48px 20px;
+  font-size: 15px;
+  color: white;
+  background: #008cff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.uploadImg:hover {
+  transition: all .5s;
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b;
+}
+
+.jcrop-holder {
+  border: 1px solid #dedede;
+  img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    margin: auto;
+  }
+}
+
+#imgIframe {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+@media screen and (max-height: 625px) {
+  .filter-modal .rodal{
+    overflow: auto;
+  }
+  .filter-modal .rodal-dialog {
+    bottom: auto;
+  }
+}

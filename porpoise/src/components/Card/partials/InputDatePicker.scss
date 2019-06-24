@@ -1,0 +1,28 @@
+.start-date-picker, .end-date-picker {
+    float: left;
+    height: 30px;
+    height: 30px;
+}
+
+.end-date-picker {
+    float: right;
+}
+
+.react-datepicker__day--in-range, .react-datepicker__day--in-selecting-range, .react-datepicker__day--selected {
+    background-color: #008cff;
+}
+
+.react-datepicker__close-icon {
+    &:after {
+        background: url('./assets/delete_icon_normal.svg') no-repeat;
+        background-size: contain;
+        height: 14px;
+        width: 14px;
+        content: "";
+        margin-top: -7px;
+    }
+    &:hover:after, &:active:after {
+        background: url('./assets/delete_icon_hover.svg') no-repeat;
+        background-size: contain;
+    }
+}

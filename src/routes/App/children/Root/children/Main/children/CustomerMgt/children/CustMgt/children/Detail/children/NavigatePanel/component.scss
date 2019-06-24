@@ -1,0 +1,54 @@
+.navigate-panel-component {
+
+  position: fixed;
+  width: 240px;
+  background-color: #ffffff;
+  padding-bottom: 10px;
+  border-radius: 7px;
+
+  .panel-title {
+    position: relative;
+    padding: 20px 27px;
+    text-align: left;
+    color: #383838;
+    font-size: 18px;
+    font-weight: 600;
+
+    .title-icon {
+      display: inline-block;
+      margin-top: -3px;
+      margin-right: 5px;
+    }
+  }
+
+  .panel-content {
+    text-align: left;
+    font-size: 12px;
+
+    .panel-item {
+      padding: 15px 25px;
+      position: relative;
+      font-weight: 400;
+      color: #5b5b5b;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: 600;
+        color: #383838;
+        background-color: #f6f6f6;
+
+        &::before {
+          content: '';
+          background-color: #d24545;;
+          position: absolute;
+          left: 13px;
+          top: 50%;
+          margin-top: -3px;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.dynamic-list-component {
+
+  .count-info {
+    padding: 0 0 25px 25px;
+    font-size: 12px;
+    border-bottom: 1px solid #ededed;
+
+    .color-red {
+      color: #d24545;
+    }
+  }
+
+  .list-container {
+    // border: 1px solid black;
+    position: relative;
+
+    .list-content {
+      // border: 1px solid red;
+    }
+
+    .pagination-container {
+      padding-right: 25px;
+      margin-top: 10px;
+      text-align: right;
+    }
+  }
+  .no-content {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: center;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,110 @@
+.list-component {
+  .breadcrumb-area {}
+
+  .filter-area {
+    background: #fff;
+    height: 134px;
+    line-height: 60px;
+    padding: 0 16px;
+
+    .inputs {
+      float: left;
+
+      .input-item {
+        margin-right: 8px;
+      }
+    }
+
+    .buttons {
+      float: right;
+      margin-right: 8px;
+
+      .btn-item {
+        margin-right: 8px;
+        &.reset-btn {
+          cursor: pointer;
+          color: #b3b3b3;
+        }
+      }
+
+    }
+  }
+
+  .result-area {
+    background: #fff;
+    padding: 16px;
+    margin-top: 14px;
+
+    .list-header {
+      line-height: 49px;
+      border-bottom: 1px solid #F0F2F3;
+
+      .total-area {
+        float: left;
+
+        .total-num {
+          margin: 0 2px;
+          color: #1890ff;
+        }
+      }
+
+      .btns {
+        float: right;
+
+        .btn-create {
+        }
+      }
+
+    }
+
+    .table-area {
+      margin-top: 10px;
+
+      .operation-area {
+        .btn-item {
+          margin-right: 20px;
+          color: #1890ff;
+          cursor: pointer;
+        }
+      }
+
+      .td-name {
+        width: 120px;
+      }
+    }
+
+    .footer {}
+  }
+
+  .star-icon{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+  }
+
+  .operation {
+    span {
+      display: inline-block;
+      padding: 0 16px;
+      height: 24px;
+      border-radius: 12px;
+      border: 1px solid rgba(230, 230, 230, 1);
+      text-align: center;
+      line-height: 24px;
+
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(91, 91, 91, 1);
+      cursor: pointer;
+      margin-right: 10px;
+      &:hover {
+        background: #D24545;
+        color: #ffffff;
+      }
+
+      &:nth-child(3){
+        margin-right: 0;
+      }
+    }
+  }
+}

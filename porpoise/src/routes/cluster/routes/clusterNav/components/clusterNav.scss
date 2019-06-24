@@ -1,0 +1,86 @@
+.cluster-home-container {
+  margin: 72px auto 0;
+  width: 970px;
+
+  .home-section {
+    margin-bottom: 10px;
+    padding: 24px 10px;
+    background: #fff;
+  }
+
+  .nav-list {
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #F0F2F3;
+    .nav-list-item {
+      display: inline-block;
+      padding: 0 16px 14px;
+      height: 30px;
+      box-sizing: border-box;
+      a {
+        color: #666;
+      }
+      &:hover, &.active {
+        border-bottom: 2px solid #333;
+        a {
+          color: #333;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .cluster-list-container {
+    padding-bottom: 5px;
+    .search-box {
+      .search-delete-button, .search-button {
+        top: 6px;
+      }
+    }
+
+    .cluster-list-table {
+      margin-top: 32px;
+      width: 950px;
+      text-align: left;
+      border-collapse: collapse;
+      font-size: 12px;
+      thead {
+        background: #F7F7F7;
+        color: #999;
+      }
+      th, td {
+        padding: 10px;
+        border: 1px solid #E8E8E8;
+        font-weight: normal;
+        text-align: left;
+      }
+      td {
+        color: #333;
+        a {
+          color: #008cff;
+        }
+      }
+      th {
+        cursor: pointer;
+        user-select: none;
+        &:first-child {
+          cursor: inherit;
+        }
+      }
+
+      .rank-btn {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: text-bottom;
+        background-image: url('./assets/btn_rank_normal.png');
+        &.up {
+          background-image: url('./assets/btn_rank_up.png');
+        }
+        &.down {
+          background-image: url('./assets/btn_rank_down.png');
+        }
+      }
+    }
+  }
+}

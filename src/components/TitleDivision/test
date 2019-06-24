@@ -1,0 +1,21 @@
+payload: {
+
+    // 表头
+    columns: [
+      {title: '名称', dataIndex: 'name', age: '年龄': dateIndex: 'age'}
+    ]
+
+    // 元组
+    records: [
+      {
+        name: 'John',
+        age: 12
+      }
+    ],
+
+    // 分页参数
+    total: 40,
+    pageNo: 1,
+    pageSize: 10,
+    totalPages: 1
+}

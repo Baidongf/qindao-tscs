@@ -1,0 +1,30 @@
+@import 'CompanyCard';
+@import 'RelationCard';
+@import 'CardInput';
+@import 'PersonCard';
+@import './relationCards/relationCard';
+@import 'IndividualTransferCard';
+@import 'BelongBankDetailCard';
+@import 'Layout';
+@import 'CompanyCluster';
+@import 'MergeRelationCard';
+@import './riskAnalysis/riskAnalysis';
+@import './ClusterDetailCard';
+
+.card-wrap {
+    position: absolute;
+    z-index: 1;
+    margin-top: $header-height;
+
+    &.group-card {
+      height: 100%;
+      margin-top: 0;
+    }
+    &.right-card {
+        right: 16px;
+    }
+    &.right-more-card {
+        right: 16px;
+        width: 300px
+    }
+}

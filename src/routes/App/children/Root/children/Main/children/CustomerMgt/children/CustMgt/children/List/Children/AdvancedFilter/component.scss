@@ -1,0 +1,239 @@
+.custMgt-button-component {
+  display: inline-block;
+  margin-left: 7px;
+  width: 88px;
+  height: 32px;
+  vertical-align: top;
+  line-height: 32px;
+  text-align: center;
+
+  .wording {
+    position: relative;
+    color: #adadad;
+    cursor: pointer;
+
+    .triangle {
+      position: relative;
+      top: 3px;
+      left: 3px;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-top-color: #adadad;
+    }
+  }
+}
+
+.ant-modal {
+  &.advanced-filter-popup {
+    // max-height: 600px;
+    top: -35px;
+  }
+}
+
+.ant-modal-header {
+  border-bottom: none;
+}
+
+.ant-modal-body {
+
+  overflow: hidden;
+
+  .advancedFilter-content {
+    .select-area {
+      max-height: 480px;
+      margin-bottom: 10px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+
+.select-row {
+  // height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+
+  .filter-description,
+  .filter-content {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    color: rgba(91, 91, 91, 1);
+    font-family:PingFangSC-Regular;
+  }
+
+  .filter-description {
+    padding-left: 15px;
+  }
+  .filter-content {
+    margin-left: 15px;
+    white-space: normal;
+  }
+
+  .clear-padding {
+    padding-left: 0;
+  }
+
+  .tags-container {
+    margin-bottom: 10px;
+    max-width: 690px;
+    max-height: 80px;
+    overflow-y: auto;
+  }
+
+  .filter-content {
+
+    .filter-range {
+      margin: 0 10px;
+    }
+    .ant-select-selection__rendered,
+    .ant-select-selection {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .engage-list {
+      display: inline;
+      padding: 2px 5px;
+      margin: 0 10px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &.selected {
+        background: #d24545;
+        color: white;
+      }
+    }
+
+  }
+  .ant-input {
+    height: 40px;
+    width: 310px;
+    line-height: 40px;
+
+    .ant-input-number-handler-wrap {
+      // 隐藏 antd InputNumber 默认的增减按钮
+      display: none;
+    }
+
+    &.ant-cascader-input {
+      width: 654px;
+    }
+  }
+  .status-tag {
+    border-color: #d24545;
+    color: #d24545;
+    background: #ffffff;
+
+    .anticon-close {
+      color: #d24545;
+    }
+  }
+
+  .outer-status-tag {
+    border-color: #d24545;
+    color: #ffffff;
+    background: #d24545;
+
+    .anticon-close {
+      color: #ffffff;
+    }
+  }
+}
+
+.province-list {
+  padding: 0 15px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+
+  .filter-description,
+  .filter-content {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .filter-content {
+    margin-left: 15px;
+
+    .province-container {
+      height: 25px;
+      overflow-y: hidden;
+    }
+
+    .expanded {
+      height: auto;
+    }
+
+    .city-container,
+    .area-container {
+      background-color: #f6f6f6;
+      padding: 5px 0;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .subs {
+      display: inline-block;
+      vertical-align: top;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:nth-child(2) {
+        width: 570px;
+        white-space: normal;
+        word-break: keep-all;
+      }
+    }
+
+    .left-container,
+    .right-container {
+      .city-tag {
+        float: left;
+        display: inline-block;
+        padding: 2px 5px;
+        margin: 0 5px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &.selected {
+          background: #d24545;
+          color: white;
+        }
+      }
+    }
+
+    .fold-container {
+      cursor: pointer;
+      display: inline-block;
+      padding: 2px 5px;
+      margin: 0;
+      margin-left: -8px;
+      vertical-align: top;
+
+      .triangle {
+        display: inline-block;
+        height: 0;
+        width: 0;
+        border: 6px solid transparent;
+        border-top-color: #cdcdcd;
+        margin-left: 2px;
+        vertical-align: bottom;
+
+        &.reverse {
+          transform: rotate(180deg);
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+

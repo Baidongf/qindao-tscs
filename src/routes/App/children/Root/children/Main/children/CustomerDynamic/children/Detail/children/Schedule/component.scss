@@ -1,0 +1,17 @@
+.schedule-component {
+  background: #ffffff;
+  border-radius: 7px;
+  margin-top: 15px;
+
+  .title {
+    border-bottom: 1px solid #fafafa;
+    padding: 25px;
+    font-size: 14px;
+    color: #383838;
+    font-weight: 600;
+  }
+
+  .first-column {
+    padding-left: 25px;
+  }
+}

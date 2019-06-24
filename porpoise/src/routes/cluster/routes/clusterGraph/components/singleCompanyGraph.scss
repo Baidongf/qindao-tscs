@@ -1,0 +1,87 @@
+.single-company-container {
+  position: absolute;
+  top: 0;
+
+  .single-company-graph {
+    background: #f6f7f7;
+    .node {
+      fill: #60A1F1;
+      stroke: #60A1F1;
+      &.blur-node {
+        rect, .label {
+          opacity: .3;
+        }
+      }
+    }
+    .same-layer-node, .match-node {
+      fill: #89C058;
+      stroke: #89C058;
+    }
+    .root-node {
+      fill: #1F2D3D;
+      stroke: #1F2D3D;
+    }
+    .label {
+      fill: #999;
+      stroke: none;
+    }
+    .label-bg {
+      fill: #f6f7f7;
+      stroke: none;
+    }
+    .indirect-invest-label {
+      cursor: pointer;
+    }
+
+    .node-name {
+      stroke: none;
+      fill: #fff;
+      font-size: 12px;
+    }
+
+    .link {
+      fill: none;
+      stroke: #D1D1D1;
+      &.link-highlight {
+        stroke: #475461;
+        stroke-width: 2;
+        &+.link-name {
+          fill: #475461;
+        }
+      }
+      &.link-blur {
+        opacity: .3;
+        &+.link-name {
+          opacity: .3;
+        }
+      }
+    }
+    .toggle-icon {
+      cursor: pointer;
+      rect {
+        fill: #74B2F4;
+      }
+      text {
+        fill: #fff;
+        stroke: none;
+      }
+    }
+    .core-star {
+      fill: #F5A623;
+      stroke: #F5A623;
+    }
+    .tag {
+      cursor: pointer;
+    }
+  }
+
+  .hover-label-container {
+    position: absolute;
+    padding: 16px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1), 0 10px 12px 0 rgba($color: #5397E9, $alpha: 0.1);
+    background: #fff;
+  }
+  .tag-label {
+    padding: 4px;
+  }
+}

@@ -1,0 +1,103 @@
+.risk-card-box {
+    width: 340px;
+    .risk-index-title {
+        position: relative;
+        padding-left: 16px;
+        background: #008cff;
+        margin: 0;
+        line-height: 40px;
+        font-size: 16px;
+        color: #fff;
+
+        .help-icon {
+            display: block;
+            float: right;
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            margin: 10px;
+            background-image: url('../components/Card/assets/help.png');
+            background-size: contain;
+            &:hover {
+                background-image: url('../components/Card/assets/help_hover.png');
+            }
+        }
+
+        .description {
+            display: none;
+        }
+        .help-icon:hover + .description {
+            display: block;
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            width: 250px;
+            background: #fff;
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.16);
+            padding: 10px 12px;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: justify;
+            color: #666666;
+            p {
+                margin: 0;
+                padding-left: 0;
+            }
+        }
+    }
+    .risk-index-percen {
+        color: red
+    }
+    .risk-index-money-title {
+        font-size: 14px;
+        padding: 10px 0 0 20px;
+    }
+    .risk-index-money {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .risk-index-balance-box {
+        float: right;
+        padding-right: 50px;
+        .risk-index-balance {
+            color: green
+        }
+    }
+    p {
+        padding-left: 20px;
+        margin: 5px 0
+    }
+}
+.company-not-belong {
+    color: #008cff !important
+}
+.company-belong {
+    color: rgb(93, 188, 0) !important
+}
+.company-graylist {
+    color: #d6d6d6;
+}
+.company-blacklist {
+    color: #7a7a7a;
+}
+
+.card.risk-analysis .card-body {
+    .cluster-list .cluster-item .custom-checkbox {
+        color: rgba(0, 0, 0, 0.6);
+    }
+    .search-box .search-input {
+        margin: 0 0 14px;
+    }
+}
+.nowStyle2 {
+    margin: 0 0 10px 0;
+    color: rgba(0, 0, 0, .4);
+    font-size: 13px
+}
+
+.chart-container .chart-layer {
+    @mixin vertex-color ($color, $opacity:1) {
+        fill: rgba($color, $opacity);
+        stroke-width: 0px;
+    }
+}

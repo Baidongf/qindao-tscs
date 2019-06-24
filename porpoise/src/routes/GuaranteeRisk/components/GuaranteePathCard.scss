@@ -1,0 +1,41 @@
+.card.guarantee-path {
+  .card-body {
+    max-height: 800px;
+    overflow: auto;
+  }
+
+  .path-type-title {
+    background-color: #d3d3d3;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+
+    .triangle-wrapper {
+      float: right;
+      margin-right: 10px;
+    }
+  }
+
+  .guarantee-list {
+    max-height: 200px;
+    overflow: auto;
+    li {
+      list-style: none;
+      word-break: break-word;
+      padding-bottom: 5px;
+      line-height: 1.4em;
+      cursor: pointer;
+      &.highlight-text {
+        color: #008cff;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

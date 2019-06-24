@@ -1,0 +1,76 @@
+.person-card {
+    .relation-title {
+        margin-bottom: 8px;
+        font-size: $font-M;
+    }
+
+    .card-body .table {
+        border-spacing: 0;
+
+        td {
+            height: 31px;
+            padding: 0;
+            border-bottom: 1px solid $filter-border-color;
+            .name, .connect-company, .person-merge {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .name {
+                width: 64px;
+            }
+            .connect-company, .person-merge {
+                width: 200px;
+            }
+            .connect-reason, .merge-reason {
+                width: 48px;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: $primary-blue;
+                    cursor: pointer;
+                    &:hover, &:active {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        thead {
+            display: table;
+            padding-right: 16px;
+            table-layout: fixed;
+            color: $primary-lighter-black;
+        }
+
+        tbody {
+            display: block;
+            max-height: 256px;
+            overflow: auto;
+            padding-right: 16px;
+
+            tr {
+                display: table;
+                table-layout: fixed;
+            }
+        }
+    }
+
+    .card-body .search-btn {
+        font-size: $font-M;
+        padding: 9px 12px;
+        margin: 16px;
+        float: right;
+        color: $white;
+        //background-color: $primary-blue;
+        background-color: #008cff;
+        &.invalid {
+            background-color: $primary-lighter-black;
+            cursor: not-allowed;
+        }
+    }
+
+    h2 {
+        margin: 0;
+    }
+}

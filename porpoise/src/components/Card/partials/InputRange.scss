@@ -1,0 +1,28 @@
+.input-range {
+    .input-range-row {
+        position: relative;
+
+        input[type='text'],
+        input.input-number {
+            float: left;
+            width: 118px;
+            height: 30px;
+            padding: 0 0 0 8px;
+            border: none;
+            background-color: #F6F7F7;
+            &::placeholder {
+                color: #A3A9B0;
+            }
+        }
+        .dash {
+            line-height: 30px;
+        }
+        .dash + input[type='text'],
+        .dash + input.input-number {
+            float: right;
+        }
+        & + .input-range-row {
+            text-align: center;
+        }
+    }
+}

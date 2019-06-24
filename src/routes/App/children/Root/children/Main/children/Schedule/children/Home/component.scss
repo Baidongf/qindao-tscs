@@ -1,0 +1,319 @@
+.scheduleContent {
+ max-width: 300px;
+  .time {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+  }
+
+  .description {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.schedule {
+  .content {
+    position: relative;
+    overflow: hidden;
+
+    .big-calendar {
+      border-radius: 8px;
+      background: #FFFFFF;
+      width: 714px;
+
+
+      .calendar-header {
+        box-sizing: border-box;
+        height: 52px;
+        padding: 10px 15px;
+        border-bottom: 1px solid #f5f7f7;
+
+        .left {
+          float: left;
+        }
+
+        .right {
+          float: right;
+        }
+      }
+
+      .week-map {
+        .item {
+          display: inline-block;
+          width: 102px;
+          height: 38px;
+          line-height: 38px;
+          text-align: center;
+          font-size: 14px;
+        }
+      }
+
+      .day-wrap {
+        .item {
+          display: inline-block;
+          width: 102px;
+          height: 105px;
+          border-top: 1px solid #f5f7f7;
+          border-right: 1px solid #f5f7f7;
+          padding: 10px;
+          overflow: hidden;
+
+
+          .day-text-wrap {
+            text-align: right;
+
+            .day-text {
+              width: 25px;
+              height: 25px;
+              color: #919191;
+              font-size: 12px;
+              float: right;
+              border-radius: 5px;
+              line-height: 25px;
+              text-align: center;
+
+              &.today {
+                border-style: solid;
+                border-width: 2px;
+                border-color: #D24545;
+                background: #FFFFFF;
+                font-weight: bold;
+                font-size: 14px;
+                color: #D24545;
+              }
+              &.cur-selected{
+                background: #e25555;
+                font-weight: bold;
+                font-size: 14px;
+                color: #FFFFFF;
+              }
+            }
+          }
+
+          .day-schedule-wrap {
+            height: 100px;
+            overflow: scroll;
+            margin-right: -28px;
+
+
+            .schedule-item {
+              cursor: pointer;
+              padding-bottom: 4px;
+              position: relative;
+
+              &:hover {
+                background: rgba(226, 85, 85, 1);
+
+                .title {
+                  span {
+                    background: #ffffff;
+                  }
+
+                  p {
+                    color: #ffffff;
+                  }
+                }
+              }
+
+              .title {
+                span {
+                  display: inline-block;
+                  width: 6px;
+                  height: 6px;
+                  background: rgba(226, 85, 85, 1);
+                  border-radius: 50%;
+                }
+
+                p {
+                  display: inline-block;
+                  font-size: 12px;
+                  font-weight: 400;
+                  color: rgba(102, 102, 102, 1);
+                  margin-left: 4px;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+    .schedule-wrap {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 360px;
+      height: 100%;
+      overflow: hidden;
+
+      .search-wrap {
+        padding: 16px 10px;
+        border-radius: 8px;
+        background: #FFFFFF;
+      }
+
+      .schedule-list-wrap {
+        position: absolute;
+        top: 74px;
+        bottom: 0;
+        overflow-y: scroll;
+        width: 377px;
+
+        .schedule-list {
+          background: #FFFFFF;
+          border-radius: 8px;
+          width: 100%;
+          min-height: 100%;
+
+
+          .schedule-day-wrap {
+            .day-title {
+              padding: 16px 0;
+
+              span {
+                width: 4px;
+                height: 14px;
+                background: rgba(210, 69, 69, 1);
+                display: inline-block;
+              }
+
+              p {
+                margin-left: 8px;
+                display: inline-block;
+                height: 14px;
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(51, 51, 51, 1);
+                line-height: 14px;
+                position: relative;
+                top: -1px;
+              }
+            }
+
+            .day-item-wrap {
+              width: 100%;
+              .day-item {
+                padding: 16px;
+                height: 94px;
+                border-bottom: 1px solid rgb(243, 243, 243);
+                border-top: 1px solid rgb(243, 243, 243);
+                cursor: pointer;
+
+                &:hover {
+                  background: rgb(246, 246, 246);
+
+                  .clock {
+                    background: url("./image/clock-red.png");
+                    background-repeat: no-repeat;
+                    background-size: 30px 30px;
+                    background-position: center;
+                  }
+                }
+
+                .clock {
+                  display: inline-block;
+                  background: url("./image/clock-black.png");
+                  background-repeat: no-repeat;
+                  background-size: 30px 30px;
+                  background-position: center;
+                  height: 100%;
+                  width: 30px;
+                  vertical-align: top;
+                  margin-right: 20px;
+                }
+
+                .schedule-item-content {
+                  display: inline-block;
+                  vertical-align: top;
+                  width: 84%;
+
+                  .time {
+                    width: 270px;
+
+                    .label {
+                      height: 14px;
+                      font-size: 14px;
+                      font-weight: 500;
+                      color: rgba(51, 51, 51, 1);
+                      line-height: 14px;
+                      float: left;
+                    }
+
+                    .icon-wrap {
+                      float: right;
+
+                      .edit {
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        background: url("./image/edit-black.png");
+                        background-size: cover;
+
+                        &:hover {
+                          background: url("./image/edit-red.png");
+                          background-size: cover;
+                        }
+                      }
+
+                      .delete {
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        background: url("./image/delete-black.png");
+                        background-size: cover;
+                        margin-left: 10px;
+
+                        &:hover {
+                          background: url("./image/delete-red.png");
+                          background-size: cover;
+                        }
+                      }
+                    }
+                  }
+
+                  .name {
+                    height: 14px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: rgba(51, 51, 51, 1);
+                    line-height: 14px;
+                    margin: 10px 0;
+                  }
+
+                  .description {
+                    height: 14px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: rgba(102, 102, 102, 1);
+                    line-height: 14px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+
+    }
+  }
+}
+

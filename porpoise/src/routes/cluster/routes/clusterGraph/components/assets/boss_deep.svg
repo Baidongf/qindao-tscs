@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="13px" viewBox="0 0 11 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>zhanghao (1)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 11 0 11 13 0 13"></polygon>
+    </defs>
+    <g id="UI规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(-42.000000, -880.000000)">
+            <g id="zhanghao-(1)" transform="translate(42.000000, 880.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M5.37387892,6.84821153 C7.22595594,6.84821153 8.73325494,5.31211376 8.73325494,3.42387913 C8.73325494,1.5359346 7.22602567,0 5.37387892,0 C3.5218019,0 2.01483414,1.53615217 2.01483414,3.42387913 C2.01483414,5.31182367 3.52187164,6.84821153 5.37387892,6.84821153 Z M4.08578601,7.47499411 C1.74653593,7.47499411 0,9.11554356 0,11.4981876 L0,11.7547206 C0,13 1.87189866,13 4.24118629,13 L6.75825585,13 C9.03432772,13 11,13 11,11.7547206 L11,11.4981876 C11,9.11597869 9.25311541,7.47499411 6.91426629,7.47499411 L4.08564654,7.47499411 L4.08578601,7.47499411 Z" id="Fill-1" fill="#B0B5C4" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

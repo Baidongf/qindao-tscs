@@ -1,0 +1,47 @@
+.business-component {
+  background: #ffffff;
+  border-radius: 7px;
+  margin-top: 15px;
+
+  .panel-title {
+    position: relative;
+    border-bottom: 1px solid #fafafa;
+    padding: 25px;
+    font-size: 14px;
+    color: #383838;
+    font-weight: 600;
+
+    .relate-button {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      padding: 8px 15px;
+      border: 1px solid #d24545;
+      border-radius: 5px;
+      font-size: 12px;
+      color: #d24545;
+      font-weight: normal;
+      cursor: pointer;
+    }
+  }
+
+  .first-column {
+    padding-left: 25px;
+  }
+
+  .delete-btn {
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    background: url(./images/delete.png);
+    background-size: 100%;
+
+    vertical-align: middle;
+    cursor: pointer;
+
+    &:hover {
+      background: url(./images/delete-hover.png);
+      background-size: 100%;
+    }
+  }
+}

@@ -1,0 +1,206 @@
+.relation-panel-component {
+  background: #ffffff;
+  margin-bottom: 16px;
+  border-radius: 7px;
+
+  &.full-screen-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+  }
+
+  .content-title {
+    position: relative;
+    padding: 20px 25px;
+    border-bottom: 1px solid #f3f3f3;
+    color: #383838;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    vertical-align: top;
+
+    .panel-flag {
+      display: inline-block;
+      width: 4px;
+      height: 17px;
+      margin-right: 5px;
+      border-radius: 2px;
+      background-color: #d24545;
+      line-height: 17px;
+      vertical-align: top;
+    }
+
+    .addition {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+
+      .icon-button {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-left: 15px;
+        cursor: pointer;
+      }
+
+      .org {
+        background: url(./images/org.svg);
+        background-size: 100%;
+        &.active{
+          background: url(./images/org-active.svg);
+        }
+        &:hover {
+          background: url(./images/org-active.svg);
+        }
+      }
+
+      .list {
+        background: url(./images/list.svg);
+        background-size: 100%;
+        &.active{
+          background: url(./images/list-active.svg);
+        }
+        &:hover {
+          background: url(./images/list-active.svg);
+        }
+      }
+
+      .full-screen {
+        background: url(./images/full-screen.svg);
+        background-size: 100%;
+
+        &.active{
+          background: url(./images/full-screen-active.svg);
+        }
+        &:hover {
+          background: url(./images/full-screen-active.svg);
+        }
+      }
+    }
+  }
+
+  .btn-group-g {
+    padding: 25px;
+
+    .btn-wrap-g {
+      float: left;
+
+      div {
+        display: inline-block;
+        padding: 0 12px;
+        height: 30px;
+        border: 1px solid rgba(233, 233, 233, 1);
+        background: #ffffff;
+        border-radius: 5px;
+        color: #5B5B5B;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-right: 20px;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba(210, 69, 69, 1);
+          color: rgba(255, 255, 255, 1);
+          border: none;
+        }
+
+        &.active {
+          background: rgba(210, 69, 69, 1);
+          color: rgba(255, 255, 255, 1);
+          border: none;
+        }
+      }
+    }
+
+    .down {
+      float: right;
+      position: relative;
+      cursor: pointer;
+
+      .title {
+        p {
+          display: inline-block;
+
+          font-size: 14px;
+          font-weight: 400;
+          color: rgba(91, 91, 91, 1);
+        }
+
+        img {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          position: relative;
+          left: 3px;
+          top: -2px;
+
+          &.active {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .content {
+        width: 136px;
+        position: absolute;
+        background: rgba(246, 246, 246, 1);
+        border-radius: 7px;
+        top: 30px;
+        right: -25px;
+        z-index: 10000;
+
+        div {
+          cursor: pointer;
+          height: 36px;
+
+          line-height: 36px;
+          padding: 0 10px;
+          font-size: 12px;
+          font-weight: 400;
+          color: rgba(91, 91, 91, 1);
+
+          &:hover {
+            background: rgba(236, 236, 236, 1);
+          }
+
+          &.active {
+            background: rgba(236, 236, 236, 1);
+
+            img {
+              display: inline-block;
+            }
+          }
+
+          p {
+            display: inline-block;
+          }
+
+          img {
+            display: none;
+            width: 10px;
+            height: 10px;
+            position: relative;
+            left: 20px;
+            top: -2px;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .content-body {
+    // padding: 28px;
+
+    .content-content {
+      margin-top: 30px;
+      height: 500px;
+      position: relative;
+    }
+  }
+}

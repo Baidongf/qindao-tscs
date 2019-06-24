@@ -1,0 +1,92 @@
+s.label-container {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  padding: 10px;
+  max-width: 400px;
+  width: 187px;
+  background: #fff;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .29);
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    height: 0;
+    width: 0;
+    font-size: 0;
+    border: 30px solid red;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tips-list {
+    display: inline-block;
+    color: #BDBDBD;
+    li {
+      line-height: 1.7;
+      &::before {
+        content: '';
+        display: inline-block;
+        margin-right: 4px;
+        width: 10px;
+        height: 10px;
+      }
+      &.core::before {
+        width: 16px;
+        height: 16px;
+        margin-left: -4px;
+        margin-right: 2px;
+        background: url('./assets/star.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        vertical-align: sub;
+      }
+      &.belong-inner::before {
+        background: #98CB6A;
+      }
+      &.listed::before {
+        background: #27B3F4;
+      }
+      &.blacklist::before {
+        background: #000;
+      }
+      &.abnormal::before {
+        background: #D24545;
+      }
+      &.control-shareholder::before {
+        background: #8785EB;
+      }
+      &.actual-controller::before {
+        background: #ff9d00;
+      }
+    }
+  }
+  .group-tips-list {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 5px;
+    color: #BDBDBD;
+    li {
+      line-height: 1.7;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 7px;
+        margin-left: -4px;
+        margin-right: 2px;
+        vertical-align: middle;
+      }
+      &.current-insight::before {
+        background-color: #000;
+      }
+      &.same-group::before {
+        background-color: #89c058;
+      }
+      &.diff-group::before {
+        background-color: #60a1f1;
+      }
+    }
+  }
+}

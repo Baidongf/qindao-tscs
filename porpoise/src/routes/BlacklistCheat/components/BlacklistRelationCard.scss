@@ -1,0 +1,72 @@
+@import 'variables';
+
+.card.blacklist-relation-card {
+  .search-btn, .clear-btn {
+    float: right;
+    width: 88px;
+    height: 32px;
+    cursor: pointer;
+    line-height: 32px;
+    text-align: center;
+  }
+  .search-btn {
+      margin-left: 8px;
+      background-color: $primary-blue;
+      color: $white;
+      &:hover {
+          background-color: $primary-lighter-blue;
+      }
+      &.invalid-btn {
+          background-color: $primary-lighter-black;
+          cursor: not-allowed;
+      }
+  }
+  .clear-btn {
+      color: $primary-lighter-black;
+      &:hover {
+          color: $primary-black;
+      }
+  }
+
+  .config {
+      position: relative;
+  }
+  .config-title {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    background-color: #c4e4ff;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+  }
+
+  .triangle-wrapper {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    cursor: pointer;
+    .triangle {
+        position: absolute;
+        margin-top: 5px;
+    }
+    .triangle-up {
+        margin-top: 1px;
+    }
+  }
+
+  .card-input-container .card-input:nth-child(2) .search-input {
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #f00;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: #f00;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        color: #f00;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        color: #f00;
+    }
+  }
+}

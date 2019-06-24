@@ -1,0 +1,112 @@
+.card.blacklist-relation-path {
+  width: 300px;
+  background-color: transparent;
+  box-shadow: none;
+
+  .fold-card-icon {
+      display: none;
+  }
+
+  .card-header {
+      width: 300px;
+      height: 40px;
+      padding: 0;
+      margin-bottom: 8px;
+      background-color: #fff;
+      box-shadow: 0 1px 7px 0 rgba(0,0,0,.29);
+      cursor: pointer;
+
+      .name {
+          margin: 0 0 0 16px;
+          line-height: 40px;
+          font-size: 14px;
+          font-weight: normal;
+          color: #757F89;
+          user-select: none;
+      }
+
+      .triangle-wrapper {
+          margin: 14px 25px 0 0;
+      }
+  }
+
+  .card-body {
+    background-color: #fff;
+    box-shadow: 0 1px 7px 0 rgba(0,0,0,.29);
+    padding: 2px 5px 16px 16px;
+
+    .rc-pagination {
+      margin-top: 10px;
+      .rc-pagination-item-active {
+          background-color: #008cff;
+          border-color: #008cff;
+          &:hover {
+              background-color: #006CC6;
+          }
+      }
+      .rc-pagination-prev, .rc-pagination-next, .rc-pagination-item {
+        min-width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .triangle-wrapper {
+    position: relative;
+    float: right;
+    cursor: pointer;
+    .triangle {
+        position: absolute;
+        margin-top: 5px;
+    }
+    .triangle-up {
+        margin-top: 1px;
+    }
+  }
+
+  .show-all-btn {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    cursor: pointer;
+    &:hover {
+        border-color: #B3B3B3;
+    }
+  }
+
+  .red-text {
+      color: #f00;
+  }
+
+  .paths {
+      max-height: 500px;
+      overflow: auto;
+      .path-list {
+          list-style: none;
+      }
+      .path-title {
+          color: #f00;
+          cursor: pointer;
+          &.selected-path, &:hover {
+              color: #008cff;
+          }
+      }
+      .path-list-item {
+          -webkit-padding-start: 0;
+          padding-left: 2em;
+          li {
+              list-style: none;
+          }
+          .reason {
+              color: #8c8c8c;
+          }
+      }
+  }
+}
+
+.hide {
+  display: none;
+}

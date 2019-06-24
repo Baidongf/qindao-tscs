@@ -1,0 +1,60 @@
+.input-range {
+    .input-range-row {
+        position: relative;
+
+        input[type='text'] {
+            float: left;
+            width: 118px;
+            height: 30px;
+            padding: 0 0 0 8px;
+            border: none;
+            background-color: #F6F7F7;
+            &::placeholder {
+                color: #A3A9B0;
+            }
+        }
+        .dash {
+            line-height: 30px;
+        }
+        .dash + input[type='text'] {
+            float: right;
+        }
+        & + .input-range-row {
+            text-align: center;
+        }
+    }
+
+    .input-range-reset-btn, .input-range-ok-btn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 36px;
+        height: 18px;
+        line-height: 18px;
+    }
+
+    .input-range-ok-btn {
+        color: rgba(255, 255, 255, 0.96);
+        background-color: rgba(232, 233, 235, 0.96);
+        cursor: not-allowed;
+
+        &.valid {
+            background-color: #008cff;
+            cursor: pointer;
+        }
+    }
+
+    .input-range-reset-btn {
+        right: 40px;
+        color: #a3a9b0;
+        &:hover {
+            color: #475461;
+        }
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

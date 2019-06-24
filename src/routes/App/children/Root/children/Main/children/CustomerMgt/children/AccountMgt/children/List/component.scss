@@ -1,0 +1,74 @@
+.account-list-component {
+
+  background-color: #f0f0f0;
+
+  .filter-area {
+    background: #fff;
+    padding: 0 25px 25px 25px;;
+
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    .inputs {
+      float: left;
+
+      .input-item {
+        margin-right: 15px;
+      }
+    }
+
+    .buttons {
+      display: inline-block;
+      margin-left: 15px;
+
+      .btn-item:last-child {
+        margin-left: 5px;
+        }
+    }
+  }
+
+  .result-area {
+    background: #fff;
+    margin-top: 15px;
+    border-radius: 7px;
+
+    .list-header {
+      position: relative;
+      padding: 25px;
+
+      .total-area {
+
+        font-size: 12px;
+
+        .total-num {
+          margin: 0 2px;
+          color: #d24545;
+        }
+      }
+
+      .sort-button-area {
+        position: absolute;
+        right: 25px;
+      }
+    }
+
+    .table-area {
+
+      .operation-area {
+        .btn-item {
+          margin-right: 20px;
+          color: #1890ff;
+          cursor: pointer;
+        }
+      }
+
+      .td-name {
+        padding-left: 25px;
+      }
+
+      .ant-table-pagination {
+        margin: 50px 25px 35px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_change_normal copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="info_detail-copy-2" transform="translate(-589.000000, -89.000000)">
+            <g id="Graphical-Copy-3" transform="translate(576.000000, 76.000000)">
+                <g id="graphic/save/normal" transform="translate(10.000000, 10.000000)">
+                    <g id="icon/graphic/save">
+                        <g id="Rectangle-17" opacity="0">
+                            <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#979797" stroke-width="1" x="0.5" y="0.5" width="19" height="19"></rect>
+                        </g>
+                        <path d="M11.9775391,6.82112069 L5.41015625,6.82112069 L7.36328125,4.66594828 C7.55859375,4.45043103 7.55859375,4.12715517 7.36328125,3.91163793 C7.16796875,3.69612069 6.875,3.69612069 6.6796875,3.91163793 L3.89648438,6.95581897 C3.79882812,7.06357759 3.75,7.19827586 3.75,7.33297414 C3.75,7.46767241 3.79882812,7.60237069 3.89648438,7.71012931 L6.65527344,10.7543103 C6.85058594,10.9698276 7.14355469,10.9698276 7.33886719,10.7543103 C7.53417969,10.5387931 7.53417969,10.2155172 7.33886719,10 L5.43457031,7.8987069 L11.9775391,7.8987069 C13.8085938,7.8987069 15.2734375,9.51508621 15.2734375,11.5355603 C15.2734375,13.5560345 13.8085938,15.1724138 11.9775391,15.1724138 L6.97265625,15.1724138 C6.70410156,15.1724138 6.484375,15.4148707 6.484375,15.7112069 C6.484375,16.0075431 6.70410156,16.25 6.97265625,16.25 L11.9775391,16.25 C14.3457031,16.25 16.25,14.1487069 16.25,11.5355603 C16.25,8.92241379 14.3457031,6.82112069 11.9775391,6.82112069 Z" id="Shape" stroke="#BDBDBD" stroke-width="0.5" fill="#BDBDBD" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

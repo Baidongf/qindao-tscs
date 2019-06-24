@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 30 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 20 0 20 20 0 20"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="Group-30-Copy">
+            <g id="Group-25-Copy">
+                <g transform="translate(12.000000, 12.000000)">
+                    <g id="Group-16-Copy-5" opacity="0">
+                        <g id="Shape-Copy-9">
+                            <use fill="#E7D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <path stroke="#D0D0D0" stroke-width="2" d="M1,1 L1,19 L19,19 L19,1 L1,1 Z"></path>
+                        </g>
+                    </g>
+                    <path d="M9.92820323,10.1961524 L10.9282032,11.9282032 L10.0621778,12.4282032 L11.0621778,14.160254 L15.3923048,11.660254 L14.3923048,9.92820323 L13.5262794,10.4282032 L10.5262794,5.23205081 L11.3923048,4.73205081 L10.3923048,3 L6.06217783,5.5 L7.06217783,7.23205081 L7.92820323,6.73205081 L8.92820323,8.46410162 L2,12.4641016 L3,14.1961524 L9.92820323,10.1961524 Z M10.6961524,16.330127 L17.6961524,16.330127 L17.6961524,18.330127 L10.6961524,18.330127 L10.6961524,16.330127 Z" id="Combined-Shape" fill="#B99465"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,78 @@
+.cluster-card {
+  .card-header {
+    padding: 16px 16px 5px;
+
+    .cluster-num {
+      line-height: 25px;
+    }
+    .export-btn {
+      float: right;
+      line-height: 14px;
+      color: $white;
+      border: 1px solid $white;
+      border-radius: 2px;
+      padding: 5px;
+      cursor: pointer;
+      &:hover {
+        color: darken($white, 5);
+      }
+      &:active, &:visited {
+        color: $white;
+      }
+    }
+  }
+  .card-body .table {
+    border-spacing: 0;
+
+    td {
+      height: 31px;
+      padding: 0;
+      border-bottom: 1px solid $filter-border-color;
+      .name, .connect-company, .person-merge {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .name {
+        width: 250px;
+        a {
+            text-decoration: none;
+            color: $primary-blue;
+            cursor: pointer;
+            &:hover, &:active {
+              text-decoration: underline;
+            }
+        }
+      }
+      .status {
+        width: 60px;
+        text-align: left;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        &.danger {
+          color: $primary-red;
+        }
+      }
+    }
+
+    thead {
+      display: table;
+      padding-right: 16px;
+      table-layout: fixed;
+      color: $primary-lighter-black;
+    }
+
+    tbody {
+      display: block;
+      max-height: 256px;
+      overflow: auto;
+      padding-right: 16px;
+
+      tr {
+          display: table;
+          table-layout: fixed;
+      }
+    }
+  }
+}

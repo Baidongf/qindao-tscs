@@ -1,0 +1,51 @@
+.list-title-component {
+  position: relative;
+  height: 40px;
+
+  .title-name {
+    font-size: 14px;
+    color: #383838;
+    position: absolute;
+    top: 13px;
+
+
+    &.name {
+      left: 25px;
+    }
+    &.source {
+      left: 347px;
+    }
+    &.type {
+      left: 481px;
+    }
+    &.institution {
+      left: 609px;
+    }
+    &.manager {
+      left: 776px;
+    }
+    &.time {
+      left: 1007px;
+      &.is-customer-manager {
+        left: 609px;
+      }
+    }
+    &.operation {
+      left: 900px;
+    }
+
+  }
+  &.institution-dynamic-title-content {
+    .title-name {
+      &.source {
+        left: 450px;
+      }
+      &.type {
+        left: 650px;
+      }
+      &.time.is-customer-manager {
+        left: 850px;
+      }
+    }
+  }
+}
