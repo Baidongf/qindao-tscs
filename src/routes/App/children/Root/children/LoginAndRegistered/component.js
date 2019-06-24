@@ -19,17 +19,17 @@ const Registered = Loadable({
 class LogAndReg extends React.Component {
   render() {
     const { match } = this.props
-
     return (
       <div className="main-component">
         <Header />
         <div className='main-component-router'>
           <HashRouter>
             {/* <Route path={`${match.url}/login`} component={withRouter(Login)}></Route> */}
-            
-            <Route path={`${match.url}/Login`} component={withRouter(Login)}></Route>
-            <Route path={`${match.url}/Registered`} component={withRouter(Registered)}></Route>
-            <Route path={'/'} component={withRouter(Login)}></Route>
+            <Switch>
+              <Route path={`${match.url}/Login`} component={withRouter(Login)}></Route>
+              <Route path={`${match.url}/Registered`} component={withRouter(Registered)}></Route>
+              <Route path={`${match.url}/`} exact component={withRouter(Login)}></Route>
+            </Switch>
             {/* <Switch>
               <AuthRouter
                 path={`${match.url}/registered`}
