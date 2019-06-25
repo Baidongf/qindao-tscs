@@ -6,20 +6,20 @@ import RouteLoading from 'components/RouteLoading/index'
 
 import { Route, Switch, withRouter, HashRouter } from 'react-router-dom'
 
-// const Login = Loadable({
-//   loader: () => import('./children/Login/index'),
-//   loading: RouteLoading
-// })
+const Login = Loadable({
+  loader: () => import('./children/Login/index'),
+  loading: RouteLoading
+})
 
 const Main = Loadable({
   loader: () => import('./children/Main/index'),
   loading: RouteLoading
 })
 
-const LoginAndRegistered = Loadable({
-  loader: () => import('./children/LoginAndRegistered/index'),
-  loading: RouteLoading
-})
+// const LoginAndRegistered = Loadable({
+//   loader: () => import('./children/LoginAndRegistered/index'),
+//   loading: RouteLoading
+// })
 
 class Root extends React.Component {
 
@@ -42,12 +42,12 @@ class Root extends React.Component {
         <div className='root-component-router'>
           <HashRouter>
             <Switch>
-              {/* <Route path={`${match.url}/login`} component={withRouter(Login)}></Route> */}
-              <Route path={`${match.url}/LogAndReg`} component={withRouter(LoginAndRegistered)}></Route>
+              <Route path={`${match.url}/login`} component={withRouter(Login)}></Route>
+              {/* <Route path={`${match.url}/LogAndReg`} component={withRouter(LoginAndRegistered)}></Route> */}
               <Route path={`${match.url}/main`} component={withRouter(Main)}></Route>
 
-              {/* <Route path={`${match.url}/`} exact component={withRouter(Login)}></Route> */}
-              <Route path={`${match.url}/`} exact component={withRouter(LoginAndRegistered)}></Route>
+              <Route path={`${match.url}/`} exact component={withRouter(Login)}></Route>
+              {/* <Route path={`${match.url}/`} exact component={withRouter(LoginAndRegistered)}></Route> */}
             </Switch>
           </HashRouter>
         </div>

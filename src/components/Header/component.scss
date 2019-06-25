@@ -3,9 +3,9 @@
   top: 0;
   left: 0;
   z-index: 2019;
-  background: rgba(255, 255, 255, 1);
+  background: #333;
   width: 100%;
-  height: 50px;
+  height: 70px;
   box-shadow: 0 1px 5px #adadad;
   // overflow: hidden;
 
@@ -21,7 +21,7 @@
 
   .header-right {
     float: right;
-    height: 50px;
+    height: 70px;
     margin-right: 24px;
     color: #fff;
 
@@ -31,6 +31,28 @@
       width: 0;
       height: 100%;
       content: "";
+    }
+
+    .chooseNav{
+      float: left;
+      margin-right: 70px;
+      ul{
+        .actLi{
+          border-bottom: 3px solid #009aff;
+        }
+        a{
+          color:#bebebe;
+          float: left;
+          width: 90px;
+          text-align: center;
+          line-height: 70px;
+          text-decoration:none;
+          &:hover{
+            background: #000;
+            color:#fff;
+          }
+        }
+      }
     }
 
     .search-box {
@@ -443,7 +465,9 @@
     cursor: pointer;
   }
 }
-
+.ant-popover{
+  z-index: 2020;
+}
 .header-role-select-panel {
   cursor: default;
 

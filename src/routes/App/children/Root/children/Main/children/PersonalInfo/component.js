@@ -157,24 +157,26 @@ class PersonalInfo extends React.Component {
     const ResetPasswordForm = Form.create()(resetPassword)
     return (
       <div className='personalInfo'>
+        <div className='Btitle'>
+          <div className='title-name'>{this.state.activeIndex === 0 ? '个人中心' : '安全设置'}</div>
+          <Button className='back-btn' type="primary" onClick={() => {this.props.history.goBack()}} >返回</Button>
+        </div>
         <div className='content'>
-          <div className='left'>
+          <div className='top'>
             <div className={this.state.activeIndex === 0 ? 'nav-item active' : 'nav-item'} onClick={() => {
               this.navHandler(0)
             }}>
-              <span className='flag'></span>
-              <p>个人信息</p>
+              <p>基本信息查看</p>
             </div>
             <div className={this.state.activeIndex === 1 ? 'nav-item active' : 'nav-item'} onClick={() => {
               this.navHandler(1)
             }}>
-              <span className='flag'></span>
-              <p>修改密码</p>
+              <p>账号安全设置</p>
             </div>
           </div>
-          <div className='right'>
+          <div className='bottom'>
             <div className='info' style={{ display: this.state.activeIndex === 0 ? 'block' : 'none' }}>
-              <div className='title'>基本信息</div>
+              <div className='title'>个人基本信息设置</div>
               <div className='form'>
                 <Form>
                   <FormItem label='姓名' {...labelProps} colon={false}>
@@ -184,13 +186,13 @@ class PersonalInfo extends React.Component {
                       />
                     )}
                   </FormItem>
-                  <FormItem label='性别' {...labelProps} colon={false}>
+                  {/* <FormItem label='性别' {...labelProps} colon={false}>
                     {getFieldDecorator('sexLabel', { initialValue: this.state.userInfo.sexLabel })(
                       <Input
                         disabled
                       />
                     )}
-                  </FormItem>
+                  </FormItem> */}
                   <FormItem label='工号' {...labelProps} colon={false}>
                     {getFieldDecorator('userNo ', { initialValue: this.state.userInfo.userNo })(
                       <Input
@@ -205,7 +207,7 @@ class PersonalInfo extends React.Component {
                       />
                     )}
                   </FormItem>
-                  <FormItem label='角色' {...labelProps} colon={false}>
+                  {/* <FormItem label='角色' {...labelProps} colon={false}>
                     {getFieldDecorator('roleLabel', { initialValue: this.state.userInfo.roleLabel })(
                       <Input
                         disabled
@@ -225,7 +227,7 @@ class PersonalInfo extends React.Component {
                         disabled
                       />
                     )}
-                  </FormItem>
+                  </FormItem> */}
                   <FormItem label='邮箱' {...labelProps} colon={false}>
                     {getFieldDecorator('email', { initialValue: this.state.userInfo.email })(
                       <Input

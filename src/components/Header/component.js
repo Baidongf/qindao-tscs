@@ -6,6 +6,7 @@ import {Popover, Input, message} from 'antd'
 import {withRouter} from "react-router";
 import HzLink from 'components/HzLink'
 import emptyMessage from './images/empty-message.png'
+import {Link} from "react-router-dom"
 
 /*navIcon import*/
 import customerManage from './images/navIcon/customerManage.png'
@@ -61,6 +62,36 @@ class Header extends React.Component {
       navList: [],
       messages: [],
       searchKeyword: '',
+      activeNav:-1,
+      actNavList:[{
+        navName:'渠道管理',
+        navLink:'/root/main/home?isHome=true',
+        navKey:0
+      },{
+        navName:'数据管理',
+        navLink:'/root/main/home?isHome=true',
+        navKey:1
+      },{
+        navName:'规则管理',
+        navLink:'/root/main/home?isHome=true',
+        navKey:2
+      },{
+        navName:'任务管理',
+        navLink:'/root/main/home?isHome=true',
+        navKey:3
+      },{
+        navName:'名单管理',
+        navLink:'/root/main/home?isHome=true',
+        navKey:4
+      },{
+        navName:'查询管理',
+        navLink:'/root/main/home?isHome=true',
+        navKey:5
+      },{
+        navName:'用户管理',
+        navLink:'/root/main/home?isHome=true',
+        navKey:6
+      },]
     }
 
 
@@ -74,10 +105,7 @@ class Header extends React.Component {
       KNOWLEDGE: '/customerKnowlMgt/detail?id=',
       MARKETING_CAMPAIGNS: '/marketingActivity/ReceiveActivity/detail?id=',
     }
-
     this.timeoutId = null
-
-
     this.readAllMessages = this.readAllMessages.bind(this)
     this.searchWhenInput = this.searchWhenInput.bind(this)
     this.searchHandler = this.searchHandler.bind(this)
@@ -185,7 +213,6 @@ class Header extends React.Component {
     }, 800)
   }
 
-
   // 搜索框 - 搜索
   searchHandler(value) {
     let keyword = value.trim()
@@ -216,7 +243,6 @@ class Header extends React.Component {
     })
   }
 
-
   // 跳转到消息的详情页
   jumpToMessageDetail(schema, key, id) {
     const {base, urls} = this
@@ -233,12 +259,16 @@ class Header extends React.Component {
     this.props.history.push(detailUrl)
   }
 
+  navAct = (index) => {
+    this.setState({
+      activeNav: index
+    })
+  }
 
   render() {
 
     const { messageCount, loginUserInfo, customerList, batchTime } = this.props
     const { messages, searchKeyword } = this.state
-
     // 导航列表
     let navList = () => (
       <div className='header-nav-wrap'>
@@ -358,9 +388,20 @@ class Header extends React.Component {
       </div>
     )
 
+    // 导航栏
+    let actNavList = () =>(
+      <ul>
+        {this.state.actNavList.map((item,index) =>{
+          return <Link className={this.state.activeNav === index ? 'actLi' : ' '} to={item.navLink} replace key={index} onClick={() => {
+            this.navAct(index)
+          }}><li>{item.navName}</li></Link>
+        })}
+      </ul>
+    )
     return (
-      <div className={this.state.isHome ? 'header-component is-home' : 'header-component'}>
-        <a className='logo' href='/#/root/main/home?isHome=true'> </a>
+      // <div className={this.state.isHome ? 'header-component is-home' : 'header-component'}>
+        <div className='header-component'>
+        <a className='logoin' href='/#/root/main/home?isHome=true'>青岛银行交易安全防控系统 </a>
         <div className='header-right'>
 
           {
@@ -409,7 +450,11 @@ class Header extends React.Component {
             }
 
           </div>
-
+          
+          <div className='chooseNav'>
+            {actNavList()}
+          </div>
+          
           <Popover content={navList()} placement="bottomRight">
             <div className='nav inline'></div>
           </Popover>

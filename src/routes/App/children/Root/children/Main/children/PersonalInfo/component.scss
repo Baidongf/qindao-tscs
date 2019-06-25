@@ -1,85 +1,94 @@
 .personalInfo {
   margin-top: 70px;
+  .Btitle{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    margin-bottom: 20px;
+    padding-top: 12px;
+    .title-name{
+      width: 200px;
+      height: 25px;
+      padding-left: 5px;
+      line-height: 25px;
+      border-left: 3px solid #0079FE;
+      margin-left: 250px;
+      float: left;
+    }
+    .back-btn{
+      float: right;
+      margin-right: 250px;
+      background: #fff;
+      border: #ccc 1px solid;
+      color: #666;
+      &:hover{
+        background: #ccc;
+      }
+    }
+  }
   .content {
-    background: #ffffff;
+    background: #fff;
     width: 1200px;
     height: 750px;
     margin: 0 auto;
     border-radius: 7px;
-    .left {
-      float: left;
-      width: 295px;
-      border-right: 1px solid #f3f3f3;
-      height: 750px;
-
-      .nav-item {
-        position: relative;
-        height: 57px;
-        line-height: 57px;
-        padding-left: 30px;
-        font-size: 14px;
-        color: #5b5b5b;
+    
+    .top{
+      width: 100%;
+      height: 50px;
+      .nav-item{
+        float: left;
         cursor: pointer;
-        &.active {
-          background: rgba(246, 246, 246, 1);
-          font-size: 16px;
-          font-weight: 600;
-          color: rgba(56, 56, 56, 1);
+        height: 30px;
+        line-height: 30px;
+        margin: 20px;
+      }
+      .active{
+        border-bottom:2px solid #0079FE; 
+      }
+    }
 
-          .flag {
-            display: block;
-          }
-        }
-
-        .flag {
-          display: none;
-          position: absolute;
-          left: 0;
-          top: 20px;
-          width: 4px;
+    .bottom{
+      .info{
+        padding: 0 20px;
+        .title{
+          width: 100%;
           height: 20px;
-          background: rgba(210, 69, 69, 1);
-          border-radius: 2px;
+          float: left;
+        }
+        .form {
+          padding-top:60px;
+          .ant-form{
+            .ant-row{
+              width: 300px;
+              float: left;
+              margin-left: 40px;
+            }
+          }
+        }
+      }
+      .reset-password{
+        padding: 0 20px;
+        .title{
+          width: 100%;
+          height: 20px;
+          float: left;
+        }
+        .form{
+          padding-top:60px;
+          .ant-form{
+            .ant-row{
+              .ant-form-item-label{
+                width: 80px;
+              }
+              .ant-form-item-control-wrapper{
+                width: 260px;
+              }
+            }
+          }
         }
       }
     }
 
-    .right {
-      float: left;
-      width: 905px;
-      .info {
-        .title {
-          width: 73px;
-          height: 18px;
-          margin: 20px 20px 20px 26px;
-          font-size: 18px;
-          font-weight: 600;
-          color: rgba(56, 56, 56, 1);
-        }
-        .form {
-          padding-right: 20px;
-        }
-      }
-      .reset-password {
-        .title {
-          width: 73px;
-          height: 18px;
-          margin: 20px 20px 20px 26px;
-          font-size: 18px;
-          font-weight: 600;
-          color: rgba(56, 56, 56, 1);
-        }
-        .form {
-          padding-right: 20px;
-          .confirm {
-            margin-left: 110px;
-            width: 300px;
-          }
-          .ant-form-item-control {
-            width: 300px;
-          }
-        }
-      }
-    }
   }
 }
