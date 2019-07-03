@@ -1,9 +1,10 @@
 import React from 'react'
 import './component.scss'
-import { Button, Table, message, Input } from 'antd'
-import HzBreadcrumb from 'components/HzBreadcrumb'
+import { Button, Table, message, Input, Select} from 'antd'
+// import HzBreadcrumb from 'components/HzBreadcrumb'
 
 const Search = Input.Search
+const Option = Select.Option
 
 const FILTER_INIT_VALUES = {
   "messageCategoryId": undefined,
@@ -256,17 +257,41 @@ class Home extends React.Component {
       selectedRows: selectedRows,
       onChange: this.onSelectChange
     }
+    const sourceData = [{
+      key: 'inner',
+      value: '已处理',
+    }, {
+      key: 'outer',
+      value: '未处理',
+    }]
     return (
       <div className='message-center-home-component'>
-        <HzBreadcrumb />
+        <div className='Btitle'>
+          <div className='title-name'>风险提醒</div>
+          <Button className='back-btn' type="primary" onClick={() => {this.props.history.goBack()}} >返回</Button>
+        </div>
         <div className='filter-area'>
-          {/* <div className='title'>消息中心</div> */}
           <div className='status'>
-            <div className='label'>状态</div>
-            <div className={typeof this.state.filterObj.status !== 'number' ? 'item active' : 'item'}
-              onClick={() => {
-                this.statusHandler()
-              }}>全部
+            <div className='label'>处理状态</div>
+            <Select
+            style={
+              { width: 100 }
+            }
+            placeholder='全部'
+            onChange={this.handleSourceChange}
+            >
+              {
+                sourceData.map((source) => {
+                  return (
+                    <Option key={source.key}>{source.value}</Option>
+                  )
+                })
+              }
+            </Select>
+            {/* <div className={typeof this.state.filterObj.status !== 'number' ? 'item active' : 'item'}
+                onClick={() => {
+                  this.statusHandler()
+                }}>全部
             </div>
             <div className={this.state.filterObj.status === 1 ? 'item active' : 'item'}
               onClick={() => {
@@ -277,7 +302,7 @@ class Home extends React.Component {
               onClick={() => {
                 this.statusHandler(0)
               }}>未读
-            </div>
+            </div> */}
           </div>
           <div className='message-type'>
             <div className='first'>

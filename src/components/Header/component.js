@@ -89,7 +89,7 @@ class Header extends React.Component {
         navKey:5
       },{
         navName:'用户管理',
-        navLink:'/root/main/home?isHome=true',
+        navLink:'/root/main/systemMgt/home',
         navKey:6
       },]
     }

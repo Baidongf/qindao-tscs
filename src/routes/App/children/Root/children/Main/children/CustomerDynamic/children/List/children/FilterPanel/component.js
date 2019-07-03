@@ -41,7 +41,6 @@ class FilterPanel extends React.Component {
       types: typeData[value]
     })
   }
-
   // 动态类型 change 事件
   handleTypeChange(type) {
     this.setState({
@@ -199,13 +198,13 @@ class FilterPanel extends React.Component {
       endTimeObj,
       isCustomerManager,
     } = this.state
-
     return (
       <div className='filter-panel-component'>
 
         <div className='first-row-container'>
           {/* 第一行 */}
           {/* 动态来源 start */}
+          
           <Select
             style={
               isCustomerManager === '0' ?

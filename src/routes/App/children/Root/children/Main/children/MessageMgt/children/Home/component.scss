@@ -1,8 +1,36 @@
 .message-center-home-component {
+  padding-top: 70px;
+  .Btitle{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    padding: 12px 300px 0 300px;
+    .title-name{
+      float: left;
+      width: 200px;
+      height: 25px;
+      padding-left: 5px;
+      line-height: 25px;
+      border-left: 3px solid #0079FE;
+    }
+    .back-btn{
+      float: right;
+      background: #fff;
+      border: #ccc 1px solid;
+      color: #666;
+      &:hover{
+        background: #ccc;
+      }
+    }
+  }
+  
   .filter-area {
     background: #ffffff;
     padding: 20px;
     border-radius: 4px;
+    margin-top: 70px;
     .title {
       font-size: 18px;
       padding-bottom: 14px;
