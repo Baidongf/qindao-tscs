@@ -119,7 +119,7 @@
     "jquery-jcrop": "^0.9.13",
     "json-loader": "^0.5.4",
     "moment": "^2.18.1",
-    "node-sass": "^4.0.0",
+    "node-sass": "^4.13.1",
     "normalize.css": "^5.0.0",
     "orm": "^3.2.4",
     "pm2": "^2.5.0",
